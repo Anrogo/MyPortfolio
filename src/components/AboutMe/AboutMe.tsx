@@ -1,9 +1,13 @@
-import { AboutMeSection } from './AboutMe.styled';
+import { Subtitle } from '@/styles/GlobalStyle';
+import { AboutMeDescription, AboutMeSection } from './AboutMe.styled';
+import { theme } from '@/styles/theme';
+import { AboutMeTexts } from '@/constants/texts';
 
 const AboutMe = () => {
   return (
     <AboutMeSection>
-      <h1>Sobre mí</h1>
+      <Subtitle fontWeight={theme.fontWeight.light}>Sobre mí</Subtitle>
+      <AboutMeDescription>{AboutMeTexts.description}</AboutMeDescription>
     </AboutMeSection>
   );
 };
