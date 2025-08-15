@@ -40,7 +40,7 @@ export const Description = styled.span<TextsProps>`
   font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.lg};
   font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.medium};
   color: ${(props) => props.color ? props.color : theme.colors.white};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.lg};
+  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.xxl};
   text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
 `;
 
@@ -48,7 +48,7 @@ export const Text = styled.span<TextsProps>`
   font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.md};
   font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.light};
   color: ${(props) => props.color ? props.color : theme.colors.white};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.md};
+  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.xl};
   text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
 `;
 
