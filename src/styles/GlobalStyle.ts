@@ -52,9 +52,26 @@ export const Text = styled.span<TextsProps>`
   text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
 `;
 
+export const Paragraph = styled.p<TextsProps>`
+  font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.sm};
+  font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.light};
+  color: ${(props) => props.color ? props.color : theme.colors.white};
+  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.md};
+  text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 40px;
+`;
+
+export const MainSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: ${theme.spacing.xxl};
+  gap: ${theme.spacing.sm};
 `;

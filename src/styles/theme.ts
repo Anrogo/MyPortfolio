@@ -25,9 +25,12 @@ export const theme = {
     spacing: {
         xs: '4px',
         sm: '8px',
-        md: '16px',
-        lg: '24px',
-        xl: '32px',
+        md: '12px',
+        lg: '16px',
+        xl: '20px',
+        xxl: '24px',
+        jumbo: '28px',
+        jumbo25: '32px',
         giant: '40px',
     },
     lineHeight: {

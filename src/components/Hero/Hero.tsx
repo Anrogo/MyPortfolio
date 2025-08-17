@@ -1,15 +1,15 @@
 import { homeTexts } from '@/constants/texts';
-import { HeroSection, Container } from './Hero.styled';
+import { HeroSection, HeroContainer } from './Hero.styled';
 import { Description, Subtitle, Title } from '@/styles/GlobalStyle';
 
 const Hero = () => {
   return (
     <HeroSection id="hero">
-      <Container>
+      <HeroContainer>
         <Title>Hola, soy {homeTexts.myName}</Title>
         <Subtitle>{homeTexts.myPosition}</Subtitle>
         <Description>{homeTexts.myDescription}</Description>
-      </Container>
+      </HeroContainer>
     </HeroSection>
   );
 };

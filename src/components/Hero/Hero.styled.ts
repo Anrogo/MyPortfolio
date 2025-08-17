@@ -6,10 +6,10 @@ export const HeroSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: ${theme.spacing.giant};
+  margin: ${theme.spacing.xxl};
 `;
 
-export const Container = styled.div`
+export const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
