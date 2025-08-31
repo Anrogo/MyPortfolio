@@ -9,6 +9,7 @@ export const ExperienceSection = styled(MainSection)`
 export const ExperienceList = styled.ul`
   list-style: none;
   list-style-position: outside;
+  margin-bottom: 16px;
 `;
 
 export const ExperienceListDetail = styled.li`

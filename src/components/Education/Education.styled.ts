@@ -11,4 +11,6 @@ export const EducationList = styled.ul`
 `;
 
 
-export const EducationListDetail = styled.li``;
+export const EducationListDetail = styled.li`
+    padding: 8px;
+`;

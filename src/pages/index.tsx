@@ -2,6 +2,7 @@ import AboutMe from '@/components/AboutMe/AboutMe';
 import Education from '@/components/Education/Education';
 import Experience from '@/components/Experience/Experience';
 import Hero from '@/components/Hero/Hero';
+import Projects from '@/components/Projects/Projects';
 import { Container } from '@/styles/GlobalStyle';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <AboutMe />
       <Experience />
+      <Projects />
       <Education />
     </Container>
   );

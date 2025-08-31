@@ -1,4 +1,4 @@
-import { Description, Subtitle, Text } from '@/styles/GlobalStyle';
+import { Description, Li, Link, Subtitle, Summary, Text } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 import {
   ExperienceList,
@@ -13,42 +13,28 @@ const Experience = () => {
       <Subtitle fontWeight={theme.fontWeight.light}>Experiencia profesional</Subtitle>
       <ExperienceList>
         <ExperienceListDetail>
-          <Description>Septiembre 2023 - actualidad: </Description>
+          <Description>Septiembre 2023 - Actualidad</Description>
           <ExperienceParagraph>
             <Text>
-              Trabajo de desarrollador frontend en{' '}
-              <a href="https://pepperfinance.es" target="_blank">
+              Trabajo como desarrollador frontend en{' '}
+              <Link href="https://pepperfinance.es" target="_blank" rel="noreferrer">
                 Pepper Financial Services Group
-              </a>{' '}
-              que es una multinacional del mundo financiero situada en Juan Esplandiu 13, Madrid.
-              Aquí desarrollo labores como:
-              <ExperienceList>
-                <li>
-                  - Desarrollo y programación de interfaces de usuario para diferentes aplicativos.
-                </li>
-                <li>
-                  {' '}
-                  - Implementación de mejoras en funcionalidades y diseño para optimizar la
-                  experiencia del usuario.
-                </li>
-                <li>
-                  - Uso de tecnologías como React, Angular, Next.js e Ionic para construir
-                  aplicaciones modernas y eficientes.
-                </li>
-                <li>
-                  {' '}
-                  - Realización de pruebas y validaciones para asegurar el correcto funcionamiento y
-                  rendimiento de las aplicaciones.
-                </li>
-                <li>
-                  - Colaboración con equipos multidisciplinarios para entregar soluciones de alta
-                  calidad.
-                </li>
-                <li>
-                  - Mantenimiento y actualización continua de las aplicaciones para adaptarse a
-                  nuevas necesidades y tecnologías.
-                </li>
-              </ExperienceList>
+              </Link>
+              , multinacional del sector financiero. Desarrollo aplicaciones web y móviles con
+              tecnologías modernas como React, Angular, Next.js e Ionic.
+              <details>
+                <Summary>Más información</Summary>
+                <ExperienceList>
+                  <Li>- Implementación de interfaces de usuario para diferentes productos.</Li>
+                  <Li>
+                    - Optimización de funcionalidades y diseño para mejorar la experiencia de
+                    usuario (UX/UI).
+                  </Li>
+                  <Li>- Pruebas y validaciones para garantizar rendimiento y estabilidad.</Li>
+                  <Li>- Colaboración con equipos multidisciplinares en entornos ágiles.</Li>
+                  <Li>- Mantenimiento y evolución continua de las aplicaciones.</Li>
+                </ExperienceList>
+              </details>
             </Text>
           </ExperienceParagraph>
         </ExperienceListDetail>
@@ -58,24 +44,28 @@ const Experience = () => {
           <ExperienceParagraph>
             <Text>
               Previamente también trabajé como desarrollador de backend en{' '}
-              <a href="https://pepperfinance.es" target="_blank">
+              <Link href="https://pepperfinance.es" target="_blank">
                 Pepper Financial Services Group
-              </a>
+              </Link>
               . Desempeñando las siguiente labores en el equipo de mantenimiento:
-              <ExperienceList>
-                <li>- Uso de SQL Server.</li>
-                <li>- Programación con PL/SQL.</li>
-                <li>- Resolución de incidencias de diversa tipología.</li>
-                <li>
-                  - Creación, modificación y actualización de queries o procedimientos almacenados.
-                </li>
-                <li>- Pruebas de valicaciones de los scripts.</li>
-                <li>- Automatización de procesos.</li>
-                <li>- Actualización y mejora de los aplicativos internos.</li>
-                <li>
-                  - Integración de nuevos comercios y sus plugins en la plataforma de Ecommerce.
-                </li>
-              </ExperienceList>
+              <details>
+                <Summary>Más información</Summary>
+                <ExperienceList>
+                  <Li>- Uso de SQL Server.</Li>
+                  <Li>- Programación con PL/SQL.</Li>
+                  <Li>- Resolución de incidencias de diversa tipología.</Li>
+                  <Li>
+                    - Creación, modificación y actualización de queries o procedimientos
+                    almacenados.
+                  </Li>
+                  <Li>- Pruebas de valicaciones de los scripts.</Li>
+                  <Li>- Automatización de procesos.</Li>
+                  <Li>- Actualización y mejora de los aplicativos internos.</Li>
+                  <Li>
+                    - Integración de nuevos comercios y sus plugins en la plataforma de Ecommerce.
+                  </Li>
+                </ExperienceList>
+              </details>
             </Text>
           </ExperienceParagraph>
         </ExperienceListDetail>
@@ -85,20 +75,23 @@ const Experience = () => {
           <ExperienceParagraph>
             <Text>
               Las prácticas, o FCT, del Grado Superior de DAM. Completada en la empresa{' '}
-              <a href="https://www.vmlyr.com/es-es/spain" target="_blank">
+              <Link href="https://www.vmlyr.com/es-es/spain" target="_blank">
                 VMLY&R
-              </a>
+              </Link>
               , del grupo WPP, situado en Ríos Rosas 26, Madrid. Como data trainee he desempeñado
               las siguiente labores:
-              <ExperienceList>
-                <li>- Manejo y limpieza de ficheros.</li>
-                <li>- Carga de datos a través de Microsoft Azure Storage Explore y Hermes.</li>
-                <li>- Consulta, extracción y procesamiento de datos en Oracle.</li>
-                <li>- Creación y/o modificación de queries.</li>
-                <li>- Análisis y automatización de procesos en Oracle.</li>
-                <li>- Realización de consultas en Dynamics.</li>
-                <li>- Análisis, diseño y automatización de procesos manuales.</li>
-              </ExperienceList>
+              <details>
+                <Summary>Más información</Summary>
+                <ExperienceList>
+                  <Li>- Manejo y limpieza de ficheros.</Li>
+                  <Li>- Carga de datos a través de Microsoft Azure Storage Explore y Hermes.</Li>
+                  <Li>- Consulta, extracción y procesamiento de datos en Oracle.</Li>
+                  <Li>- Creación y/o modificación de queries.</Li>
+                  <Li>- Análisis y automatización de procesos en Oracle.</Li>
+                  <Li>- Realización de consultas en Dynamics.</Li>
+                  <Li>- Análisis, diseño y automatización de procesos manuales.</Li>
+                </ExperienceList>
+              </details>
             </Text>
           </ExperienceParagraph>
         </ExperienceListDetail>
@@ -134,14 +127,17 @@ const Experience = () => {
               Trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la
               Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. He aprendido
               muchísimo durante este año y algunas de las muchas tareas desarrolladas han sido:
-              <ExperienceList>
-                <li>- Administración de sistemas y redes.</li>
-                <li>- Mantenimiento de equipos e impresoras</li>
-                <li>- Instalación de software y hardware</li>
-                <li>- Administración de servidores</li>
-                <li>- Inventario de equipos</li>
-                <li>- Resolución de diversos problemas derivados de equipos informáticos</li>
-              </ExperienceList>
+              <details>
+                <Summary>Más información</Summary>
+                <ExperienceList>
+                  <Li>- Administración de sistemas y redes.</Li>
+                  <Li>- Mantenimiento de equipos e impresoras</Li>
+                  <Li>- Instalación de software y hardware</Li>
+                  <Li>- Administración de servidores</Li>
+                  <Li>- Inventario de equipos</Li>
+                  <Li>- Resolución de diversos problemas derivados de equipos informáticos</Li>
+                </ExperienceList>
+              </details>
             </Text>
           </ExperienceParagraph>
         </ExperienceListDetail>

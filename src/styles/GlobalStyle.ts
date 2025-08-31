@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { theme } from './theme';
+import { colors } from '@/constants/colors';
 
 export const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -75,3 +76,18 @@ export const MainSection = styled.section`
   margin: ${theme.spacing.xxl};
   gap: ${theme.spacing.sm};
 `;
+
+export const Li = styled.li``;
+
+export const Details = styled.details``;
+
+export const Summary = styled.summary`
+  cursor: pointer;
+  color: ${colors.blue1};
+`;
+
+export const Link = styled.a`
+  color: ${colors.blue1};
+  text-decoration: none;
+`;
+
