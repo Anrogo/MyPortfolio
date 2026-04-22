@@ -21,7 +21,7 @@ const Experience = () => {
                 Pepper Financial Services Group
               </Link>
               , multinacional del sector financiero. Desarrollo aplicaciones web y móviles con
-              tecnologías modernas como React, Angular, Next.js e Ionic.
+              tecnologías modernas como React, Angular, Next.js o Ionic.
               <details>
                 <Summary>Más información</Summary>
                 <ExperienceList>
@@ -131,11 +131,11 @@ const Experience = () => {
                 <Summary>Más información</Summary>
                 <ExperienceList>
                   <Li>- Administración de sistemas y redes.</Li>
-                  <Li>- Mantenimiento de equipos e impresoras</Li>
-                  <Li>- Instalación de software y hardware</Li>
-                  <Li>- Administración de servidores</Li>
-                  <Li>- Inventario de equipos</Li>
-                  <Li>- Resolución de diversos problemas derivados de equipos informáticos</Li>
+                  <Li>- Mantenimiento de equipos e impresoras.</Li>
+                  <Li>- Instalación de software y hardware.</Li>
+                  <Li>- Administración de servidores.</Li>
+                  <Li>- Inventario de equipos.</Li>
+                  <Li>- Resolución de diversos problemas relacionados con equipos informáticos.</Li>
                 </ExperienceList>
               </details>
             </Text>

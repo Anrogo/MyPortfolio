@@ -53,7 +53,7 @@ export const Text = styled.span<TextsProps>`
   text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
 `;
 
-export const Paragraph = styled.p<TextsProps>`
+export const Paragraph = styled.span<TextsProps>`
   font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.sm};
   font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.light};
   color: ${(props) => props.color ? props.color : theme.colors.white};

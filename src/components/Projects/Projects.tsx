@@ -1,5 +1,11 @@
 import { Description, Details, Text, Subtitle, Summary, Li, Link } from '@/styles/GlobalStyle';
-import { ProjectsLi, ProjectsList, ProjectsParagraph, ProjectsSection } from './Projects.styled';
+import {
+  ProjectsFeaturesList,
+  ProjectsLi,
+  ProjectsList,
+  ProjectsParagraph,
+  ProjectsSection,
+} from './Projects.styled';
 import { theme } from '@/styles/theme';
 
 const Projects = () => {
@@ -19,17 +25,45 @@ const Projects = () => {
               <Summary>Más información</Summary>
               Ahora he decidido renovarlo y esta es mi nueva creación en lo que a portfolio moderno
               y minimalista se refiere. Detalles a destacar del antiguo portfolio:
-              <ProjectsList>
-                <Li>- Creado exclusivamente con HTML, CSS y JS</Li>
+              <ProjectsFeaturesList>
+                <Li>- Creado exclusivamente con HTML, CSS y JS.</Li>
+                <Li>- Fecha de creación: 18 de noviembre de 2021.</Li>
+                <Li>
+                  - Publicado hasta 2026 en <u>https://antonioweb.es</u>.
+                </Li>
                 <Li>
                   - Github:{' '}
                   <Link href="https://github.com/Anrogo/Web-Portfolio" target="_blank">
                     Web Portfolio
                   </Link>
                 </Li>
-                Lenguaje/s: PHP Framework: CodeIgniter 3.1 Fecha creación: Junio 2020 Fecha última
-                modificación: Noviembre 2021
-              </ProjectsList>
+              </ProjectsFeaturesList>
+            </Details>
+          </ProjectsParagraph>
+        </ProjectsLi>
+        <ProjectsLi>
+          <Description>Blog Argaming</Description>
+          <ProjectsParagraph>
+            <Text>
+              Se trata de mi proyecto final para el Grado Superior de Desarrollo de Aplicaciones Web
+              en el Instituto Virgen del Carmen (Jáen), del curso 2019/20.
+            </Text>
+            <Details>
+              <Summary>Más información</Summary>
+              <ProjectsFeaturesList>
+                <Li>- Lenguaje/s: HTML, CSS, JS y PHP. Framework de PHP: CodeIgniter 3.1</Li>
+                <Li>- Fecha creación: Junio 2020.</Li>
+                <Li>- Fecha última modificación: Noviembre 2021.</Li>
+                <Li>
+                  - Github:{' '}
+                  <Link
+                    href="https://github.com/Anrogo/Proyecto-final-DAW---ARGaming"
+                    target="_blank"
+                  >
+                    Blog Argaming
+                  </Link>
+                </Li>
+              </ProjectsFeaturesList>
             </Details>
           </ProjectsParagraph>
         </ProjectsLi>
