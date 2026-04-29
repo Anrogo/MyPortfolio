@@ -53,12 +53,10 @@ export const Text = styled.span<TextsProps>`
   text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
 `;
 
-export const Paragraph = styled.span<TextsProps>`
-  font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.sm};
-  font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.light};
-  color: ${(props) => props.color ? props.color : theme.colors.white};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.md};
-  text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
+export const Paragraph = styled(Text)`
+  display: block;
+  margin-top: 4px;
+  margin-left: 8px;
 `;
 
 export const Container = styled.div`
@@ -84,6 +82,8 @@ export const Details = styled.details``;
 export const Summary = styled.summary`
   cursor: pointer;
   color: ${colors.blue1};
+  font-size: 14px;
+  padding: 4px 0px 4px 12px;
 `;
 
 export const Link = styled.a`
