@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: ${theme.colors.blue0}; //${theme.colors.blue4};
-    color: ${theme.colors.blue4}; //${theme.colors.white};
+    background-color: ${theme.colors.blue1};
+    color: ${theme.colors.blue4};
     scroll-behavior: smooth;
   }
 `;
@@ -61,11 +61,22 @@ export const Paragraph = styled(Text)`
   margin-left: 8px;
 `;
 
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 40px;
+  margin: 32px auto;
+  background-color: ${theme.colors.blue0};
+  border-radius: 16px;
+  box-shadow: 0px 10px 15px -3px;
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px;
+  background-color: ${theme.colors.white};
 `;
 
 export const MainSection = styled.section`
@@ -83,13 +94,13 @@ export const Details = styled.details``;
 
 export const Summary = styled.summary`
   cursor: pointer;
-  color: ${colors.blue1};
+  color: ${colors.blue2};
   font-size: 14px;
   padding: 4px 0px 4px 12px;
 `;
 
 export const Link = styled.a`
-  color: ${colors.blue1};
+  color: ${colors.blue2};
   text-decoration: none;
 `;
 

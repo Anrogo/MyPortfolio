@@ -16,3 +16,16 @@ export const ProjectsFeaturesList = styled.ul`
 export const ProjectsLi = styled(Li)`
   padding: 8px 0px;
 `;
+
+export const IframeContainer = styled.div`
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+`;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+`;
+

@@ -1,11 +1,16 @@
 import { Description, Details, Subtitle, Summary, Li, Link, Paragraph } from '@/styles/GlobalStyle';
 import {
+  IframeContainer,
+  ImgContainer,
   ProjectsDetails,
   ProjectsFeaturesList,
   ProjectsLi,
   ProjectsList,
   ProjectsSection,
 } from './Projects.styled';
+import Image from 'next/image';
+import CalculatorImg from '@/assets/images/calculadora_python.png';
+import ArgamingImg from '@/assets/images/portada_argaming.png';
 import { theme } from '@/styles/theme';
 
 const Projects = () => {
@@ -69,6 +74,15 @@ const Projects = () => {
                   </Link>
                 </Li>
               </ProjectsFeaturesList>
+              <ImgContainer>
+                <Image
+                  src={ArgamingImg}
+                  width={600}
+                  height={300}
+                  alt="Portada del blog ARGaming"
+                  unoptimized
+                />
+              </ImgContainer>
             </Details>
           </ProjectsDetails>
         </ProjectsLi>
@@ -94,13 +108,14 @@ const Projects = () => {
                   </Link>
                 </Li>
               </ProjectsFeaturesList>
-              <iframe
-                // style="border: 1px solid #000; border-radius: 12px;"
-                width="500"
-                height="380"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124"
-                allowFullScreen
-              ></iframe>
+              <IframeContainer>
+                <iframe
+                  width="500"
+                  height="380"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124"
+                  allowFullScreen
+                ></iframe>
+              </IframeContainer>
             </Details>
           </ProjectsDetails>
         </ProjectsLi>
@@ -134,6 +149,15 @@ const Projects = () => {
                   </Link>
                 </Li>
               </ProjectsFeaturesList>
+              <ImgContainer>
+                <Image
+                  src={CalculatorImg}
+                  width={300}
+                  height={300}
+                  alt="Calculadora con Python y Django"
+                  unoptimized
+                />
+              </ImgContainer>
             </Details>
           </ProjectsDetails>
         </ProjectsLi>
