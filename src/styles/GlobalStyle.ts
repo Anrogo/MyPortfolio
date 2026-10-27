@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 `;
-
+const defaultTabletFontSize = theme.fontSize.md;
 const defaultColor = theme.colors.blue4;
 interface TextsProps {
   fontSize?: number;
@@ -30,6 +30,10 @@ export const Title = styled.span<TextsProps>`
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : theme.fontWeight.bold)};
   color: ${(props) => (props.color ? props.color : defaultColor)};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo25)};
+
+  @media (max-width: 768px) {
+    font-size: ${(props) => (props.fontSize ? props.fontSize : defaultTabletFontSize)};
+  }
 `;
 
 export const Subtitle = styled.span<TextsProps>`
