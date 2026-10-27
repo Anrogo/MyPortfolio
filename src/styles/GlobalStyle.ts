@@ -26,33 +26,33 @@ interface TextsProps {
 }
 
 export const Title = styled.span<TextsProps>`
-  font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.jumbo25};
-  font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.bold};
-  color: ${(props) => props.color ? props.color : defaultColor};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo25};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : theme.fontSize.jumbo25)};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : theme.fontWeight.bold)};
+  color: ${(props) => (props.color ? props.color : defaultColor)};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo25)};
 `;
 
 export const Subtitle = styled.span<TextsProps>`
-  font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.jumbo};
-  font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.bold};
-  color: ${(props) => props.color ? props.color : defaultColor};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : theme.fontSize.jumbo)};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : theme.fontWeight.bold)};
+  color: ${(props) => (props.color ? props.color : defaultColor)};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo)};
 `;
 
 export const Description = styled.span<TextsProps>`
-  font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.lg};
-  font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.medium};
-  color: ${(props) => props.color ? props.color : defaultColor};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.xxl};
-  text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : theme.fontSize.lg)};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : theme.fontWeight.medium)};
+  color: ${(props) => (props.color ? props.color : defaultColor)};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.xxl)};
+  text-align: ${(props) => (props.textAlign ? props.textAlign : 'justify')};
 `;
 
 export const Text = styled.span<TextsProps>`
-  font-size: ${(props) => props.fontSize ? props.fontSize : theme.fontSize.md};
-  font-weight: ${(props) => props.fontWeight ? props.fontWeight : theme.fontWeight.light};
-  color: ${(props) => props.color ? props.color : defaultColor};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : theme.lineHeight.xl};
-  text-align: ${(props) => props.textAlign ? props.textAlign : 'justify'};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : theme.fontSize.md)};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : theme.fontWeight.light)};
+  color: ${(props) => (props.color ? props.color : defaultColor)};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.xl)};
+  text-align: ${(props) => (props.textAlign ? props.textAlign : 'justify')};
 `;
 
 export const Paragraph = styled(Text)`
@@ -76,7 +76,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: ${theme.colors.white};
+  gap: 8px;
 `;
 
 export const MainSection = styled.section`
@@ -103,4 +103,3 @@ export const Link = styled.a`
   color: ${colors.blue2};
   text-decoration: none;
 `;
-
