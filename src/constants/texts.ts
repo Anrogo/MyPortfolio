@@ -40,6 +40,7 @@ export const ExperienceTexts: ExperienceText = {
         linkHref: 'https://pepperfinance.es',
         after: ' durante 1 año y 3 meses.',
       },
+      detailsTitle: 'Detalles',
       details: [
         'Uso de SQL Server.',
         'Programación con PL/SQL.',
@@ -81,9 +82,9 @@ export const ExperienceTexts: ExperienceText = {
         'Formación, mediante teletrabajo, con la empresa Soluciones Center SCA durante las prácticas (FCT) del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos y tareas renovadas.',
     },
     {
-      dates: 'Noviembre 2018 - Octubre 2019:',
+      dates: 'Noviembre 2018 - octubre 2019:',
       description:
-        'He trabajado como técnico de informática en un empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
+        'Trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. He aprendido muchísimo durante este año y algunas de las muchas tareas desarrolladas han sido:',
       detailsTitle: 'Detalles',
       details: [
         'Administración de sistemas y redes.',
