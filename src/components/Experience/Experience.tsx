@@ -6,11 +6,12 @@ import {
   ExperienceParagraph,
   ExperienceSection,
 } from './Experience.styled';
+import { ExperienceTexts } from '@/constants/texts';
 
 const Experience = () => {
   return (
     <ExperienceSection>
-      <Subtitle fontWeight={theme.fontWeight.light}>Experiencia profesional</Subtitle>
+      <Subtitle fontWeight={theme.fontWeight.light}>{ExperienceTexts.title}</Subtitle>
       <ExperienceList>
         <ExperienceListDetail>
           <Description>Septiembre 2023 - Actualidad:</Description>

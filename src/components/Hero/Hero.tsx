@@ -1,22 +1,24 @@
-import { homeTexts } from '@/constants/texts';
+import { HomeTexts } from '@/constants/texts';
 import {
   HeroSection,
   HeroContainer,
   HeroImgSection,
   HeroTextSection,
   ProfileImage,
+  HeroSubtitle,
 } from './Hero.styled';
-import { Description, Subtitle, Title } from '@/styles/GlobalStyle';
+import { Description, Title } from '@/styles/GlobalStyle';
 import profileImage from '@/assets/images/perfil-web.jpg';
+import { colors } from '@/constants/colors';
 
 const Hero = () => {
   return (
     <HeroSection id="hero">
       <HeroContainer>
         <HeroTextSection id="hero-section-left">
-          <Title>Hola, soy {homeTexts.myName}</Title>
-          <Subtitle>{homeTexts.myPosition}</Subtitle>
-          <Description>{homeTexts.myDescription}</Description>
+          <Title>Hola, soy {HomeTexts.myName}</Title>
+          <HeroSubtitle>{HomeTexts.myPosition}</HeroSubtitle>
+          <Description>{HomeTexts.myDescription}</Description>
         </HeroTextSection>
         <HeroImgSection id="hero-section-right">
           <ProfileImage

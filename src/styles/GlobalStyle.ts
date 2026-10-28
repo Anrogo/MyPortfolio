@@ -32,7 +32,11 @@ export const Title = styled.span<TextsProps>`
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo25)};
 
   @media (max-width: 768px) {
-    font-size: ${(props) => (props.fontSize ? props.fontSize : defaultTabletFontSize)};
+    font-size: ${theme.fontSize.jumbo};
+  }
+
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.xl};
   }
 `;
 
@@ -41,6 +45,10 @@ export const Subtitle = styled.span<TextsProps>`
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : theme.fontWeight.bold)};
   color: ${(props) => (props.color ? props.color : defaultColor)};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.jumbo)};
+
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.lg};
+  }
 `;
 
 export const Description = styled.span<TextsProps>`
@@ -49,6 +57,10 @@ export const Description = styled.span<TextsProps>`
   color: ${(props) => (props.color ? props.color : defaultColor)};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.xxl)};
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'justify')};
+
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.sm};
+  }
 `;
 
 export const Text = styled.span<TextsProps>`
@@ -57,6 +69,10 @@ export const Text = styled.span<TextsProps>`
   color: ${(props) => (props.color ? props.color : defaultColor)};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : theme.lineHeight.xl)};
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'justify')};
+
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.xs};
+  }
 `;
 
 export const Paragraph = styled(Text)`
@@ -74,6 +90,14 @@ export const MainContainer = styled.div`
   background-color: ${theme.colors.blue0};
   border-radius: 16px;
   box-shadow: 0px 10px 15px -3px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 8px;
+  }
 `;
 
 export const Container = styled.div`
@@ -90,6 +114,10 @@ export const MainSection = styled.section`
   align-items: center;
   margin: ${theme.spacing.xxl};
   gap: ${theme.spacing.sm};
+
+  @media (max-width: 768px) {
+    margin: ${theme.spacing.md};
+  }
 `;
 
 export const Li = styled.li``;

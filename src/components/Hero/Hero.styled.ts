@@ -1,6 +1,7 @@
 import { theme } from '@/styles/theme';
 import styled from 'styled-components';
 import NextImage from 'next/image';
+import { Subtitle } from '@/styles/GlobalStyle';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -48,4 +49,8 @@ export const HeroImgSection = styled.div`
 export const ProfileImage = styled(NextImage)`
   object-fit: cover;
   object-position: center 30%;
+`;
+
+export const HeroSubtitle = styled(Subtitle)`
+  font-style: italic;
 `;
