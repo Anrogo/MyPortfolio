@@ -1,4 +1,6 @@
-import { EducationText, ExperienceText } from '@/interfaces/Text';
+import { EducationText, ExperienceText, ProjectsText } from '@/interfaces/Text';
+import CalculatorImg from '@/assets/images/calculadora_python.png';
+import ArgamingImg from '@/assets/images/portada_argaming.png';
 
 export const HomeTexts = {
   myName: 'Antonio Rodríguez González',
@@ -8,7 +10,7 @@ export const HomeTexts = {
 
 export const AboutMeTexts = {
   description:
-    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend, tras haber trabajado en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasasionada por la tecnología y también por el deporte siempre que saco un hueco.',
+    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend, tras haber trabajado en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte siempre que saco un hueco.',
 };
 
 export const ExperienceTexts: ExperienceText = {
@@ -74,7 +76,7 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'Febrero - marzo 2021:',
       description:
-        'He trabajado como técnico de informática en un empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
+        'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
     },
     {
       dates: 'Abril - junio 2020:',
@@ -103,9 +105,106 @@ export const ExperienceTexts: ExperienceText = {
   ],
 };
 
-export const ProjectsTexts = {
+export const ProjectsTexts: ProjectsText = {
   title: 'Proyectos destacados',
-  projects: [],
+  projects: [
+    {
+      title: 'Mi antiguo portfolio web',
+      description:
+        'Creado en noviembre 2021 y actualizado durante los años posteriores. Refleja mis comienzos como desarrollador web y la búsqueda de mostrarme al mundo laboral con un diseño moderno y fluido.',
+      detailsTitle: 'Detalles',
+      detailsDescription:
+        'Mi portfolio actual se basa en la renovación de este con un enfoque moderno y minimalista. Detalles a destacar del antiguo portfolio:',
+      details: [
+        'Creado exclusivamente con HTML, CSS y JS. Y con PHP para el envío de correos de contacto.',
+        'Fecha de creación: 18 de noviembre de 2021.',
+        'Publicado hasta 2026 en https://antonioweb.es.',
+        {
+          before: 'GitHub: ',
+          linkText: 'portfolio v1',
+          linkHref: 'https://github.com/Anrogo/Web-Portfolio',
+          after: '',
+        },
+      ],
+    },
+    {
+      title: 'Blog Argaming',
+      description:
+        'Se trata de mi proyecto final para el Grado Superior de Desarrollo de Aplicaciones Web en el Instituto Virgen del Carmen (Jaén), del curso 2019/20.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: HTML, CSS, JS y PHP. Framework de PHP: CodeIgniter 3.1',
+        'Fecha de creación: Junio 2020.',
+        'Fecha última modificación: Noviembre 2021.',
+        {
+          before: 'GitHub: ',
+          linkText: 'blog Argaming',
+          linkHref: 'https://github.com/Anrogo/Proyecto-final-DAW---ARGaming',
+          after: '',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: ArgamingImg,
+        width: 600,
+        height: 300,
+        alt: 'Portada del blog ARGaming',
+        className: 'argamingImg',
+      },
+    },
+    {
+      title: 'HealthyCook App',
+      description:
+        'Diseño UI - UX para aplicación móvil de cocina saludable. Forma parte del ejercicio de la asignatura Desarrollo de Interfaces (UI) y Experiencia de Usuario (UX) de 2º DAM.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Software: desarrollado mediante la aplicación Figma.',
+        'Fecha de creación: 5 de diciembre de 2021.',
+        {
+          before: 'Figma: ',
+          linkText: 'HealthyCook App',
+          linkHref:
+            'https://www.figma.com/proto/EUhjwcPGLIoAh10vOgVlHZ/Mockups-Healthycook-App?node-id=34%3A124&scaling=scale-down&page-id=0%3A1&starting-point-node-id=34%3A124',
+          after: '',
+        },
+      ],
+      media: {
+        type: 'iframe',
+        src: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124',
+        title: 'Vista previa del prototipo HealthyCook App en Figma',
+      },
+    },
+    {
+      title: 'Mi propia calculadora',
+      description: {
+        before:
+          'Aplicación de calculadora básica creada con Python y su librería gráfica Tkinter. La he realizado gracias al siguiente curso de Udemy: ',
+        linkText: 'Universidad Python 2021 - POO, Tkinter, Django, Flask y más',
+        linkHref:
+          'https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/',
+        after: ' (47 h).',
+      },
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: Python.',
+        'IDE: PyCharm.',
+        'Fecha de creación: 15 de enero de 2022.',
+        {
+          before: 'GitHub: ',
+          linkText: 'calculadora',
+          linkHref: 'https://github.com/Anrogo/Python-Curse/tree/master/Tkinter/Calculadora',
+          after: '',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: CalculatorImg,
+        width: 300,
+        height: 300,
+        alt: 'Calculadora con Python y Tkinter',
+      },
+    },
+  ],
 };
 
 export const EducationTexts: EducationText = {
@@ -128,7 +227,7 @@ export const EducationTexts: EducationText = {
     },
     {
       dates: '2012-2014:',
-      description: 'Bachillerato científico-tecnológico. En el instituo IES Los Cerros, Úbeda',
+      description: 'Bachillerato científico-tecnológico. En el instituto IES Los Cerros, Úbeda',
     },
   ],
 };

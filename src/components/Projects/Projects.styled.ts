@@ -52,7 +52,7 @@ export const ImgContainer = styled.div`
     img {
       max-width: 90%;
     }
-    img.argamingImage {
+    img.argamingImg {
       width: 90vw;
       max-width: 100%;
     }
