@@ -1,4 +1,4 @@
-import { ExperienceText } from '@/interfaces/Text';
+import { EducationText, ExperienceText } from '@/interfaces/Text';
 
 export const HomeTexts = {
   myName: 'Antonio Rodríguez González',
@@ -8,7 +8,7 @@ export const HomeTexts = {
 
 export const AboutMeTexts = {
   description:
-    'Soy un programador con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend, tras haber trabajado en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasasionada por la tecnología y también por el deporte siempre que saco un hueco.',
+    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend, tras haber trabajado en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasasionada por la tecnología y también por el deporte siempre que saco un hueco.',
 };
 
 export const ExperienceTexts: ExperienceText = {
@@ -99,6 +99,36 @@ export const ExperienceTexts: ExperienceText = {
       dates: 'Marzo - junio 2018: ',
       description:
         'Formación en centro de trabajo con Soluciones Center SCA (FCT) del CFGS ASIR. Aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Recibí además una carta de recomendación de la empresa y dos certificados de especialista en PrestaShop y WordPress.',
+    },
+  ],
+};
+
+export const ProjectsTexts = {
+  title: 'Proyectos destacados',
+  projects: [],
+};
+
+export const EducationTexts: EducationText = {
+  title: 'Educación y estudios',
+  education: [
+    {
+      dates: '2020-2022:',
+      description:
+        'CFGS Técnico Superior en Desarrollo de Aplicaciones Multiplataforma. En el CEV - Escuela Superior de Comunicación, Imagen y Sonido de Madrid.',
+    },
+    {
+      dates: '2019-2020:',
+      description:
+        'CFGS Técnico Superior en Desarrollo de Aplicaciones Web. En el instituto IES Virgen del Carmen, Jaén.',
+    },
+    {
+      dates: '2016-2018:',
+      description:
+        'CFGS Técnico Superior en Administración de Sistemas Informáticos en Red. En el instituto IES Los Cerros, Úbeda.',
+    },
+    {
+      dates: '2012-2014:',
+      description: 'Bachillerato científico-tecnológico. En el instituo IES Los Cerros, Úbeda',
     },
   ],
 };

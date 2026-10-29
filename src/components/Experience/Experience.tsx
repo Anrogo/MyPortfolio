@@ -13,20 +13,16 @@ const Experience = () => {
     <ExperienceSection>
       <Subtitle fontWeight={theme.fontWeight.light}>{ExperienceTexts.title}</Subtitle>
       <ExperienceList>
-        {ExperienceTexts.jobs.map((job, index) => (
+        {ExperienceTexts.jobs.map((job) => (
           <ExperienceListDetail key={job.dates}>
             <Description>{job.dates}</Description>
-            {index < 2 && <br />}
+            <br />
             <ExperienceParagraph>
               <Paragraph>
                 {job.linkDescription ? (
                   <>
                     {job.linkDescription.before}
-                    <Link
-                      href={job.linkDescription.linkHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <Link href={job.linkDescription.linkHref} target="_blank" rel="noreferrer">
                       {job.linkDescription.linkText}
                     </Link>
                     {job.linkDescription.after}

@@ -11,11 +11,16 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: ${theme.colors.blue1};
+    background-image: url('/images/olivar.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: ${theme.colors.blue4};
     scroll-behavior: smooth;
   }
 `;
-const defaultTabletFontSize = theme.fontSize.md;
+
 const defaultColor = theme.colors.blue4;
 interface TextsProps {
   fontSize?: number;
@@ -84,7 +89,7 @@ export const Paragraph = styled(Text)`
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 65%;
   padding: 40px;
   margin: 32px auto;
   background-color: ${theme.colors.blue0};
@@ -92,10 +97,12 @@ export const MainContainer = styled.div`
   box-shadow: 0px 10px 15px -3px;
 
   @media (max-width: 768px) {
+    width: 75%;
     padding: 16px;
   }
 
   @media (max-width: 500px) {
+    width: 85%;
     padding: 8px;
   }
 `;
@@ -120,15 +127,23 @@ export const MainSection = styled.section`
   }
 `;
 
-export const Li = styled.li``;
+export const Li = styled.li`
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.xs};
+  }
+`;
 
 export const Details = styled.details``;
 
 export const Summary = styled.summary`
   cursor: pointer;
   color: ${colors.blue2};
-  font-size: 14px;
+  font-size: ${theme.fontSize.sm};
   padding: 4px 0px 4px 12px;
+
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.xs};
+  }
 `;
 
 export const Link = styled.a`

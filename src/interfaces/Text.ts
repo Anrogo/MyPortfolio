@@ -17,3 +17,13 @@ export interface LinkDescription {
   linkHref: string;
   after: string;
 }
+
+export interface EducationText {
+  title: string;
+  education: Education[];
+}
+
+export interface Education {
+  dates: string;
+  description: string;
+}

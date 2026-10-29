@@ -16,7 +16,7 @@ import { theme } from '@/styles/theme';
 const Projects = () => {
   return (
     <ProjectsSection>
-      <Subtitle fontWeight={theme.fontWeight.light}>Proyectos más destacados</Subtitle>
+      <Subtitle fontWeight={theme.fontWeight.light}>Proyectos destacados</Subtitle>
       <ProjectsList>
         <ProjectsLi>
           <Description>Mi antiguo portfolio web</Description>
@@ -76,6 +76,7 @@ const Projects = () => {
               </ProjectsFeaturesList>
               <ImgContainer>
                 <Image
+                  className="argamingImg"
                   src={ArgamingImg}
                   width={600}
                   height={300}
@@ -110,8 +111,6 @@ const Projects = () => {
               </ProjectsFeaturesList>
               <IframeContainer>
                 <iframe
-                  width="500"
-                  height="380"
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124"
                   allowFullScreen
                 ></iframe>
