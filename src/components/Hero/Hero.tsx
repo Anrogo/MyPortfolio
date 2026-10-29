@@ -9,7 +9,6 @@ import {
 } from './Hero.styled';
 import { Description, Title } from '@/styles/GlobalStyle';
 import profileImage from '@/assets/images/perfil-web.jpg';
-import { colors } from '@/constants/colors';
 
 const Hero = () => {
   return (

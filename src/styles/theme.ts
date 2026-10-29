@@ -3,7 +3,7 @@ import { colors } from '@/constants/colors';
 export const theme = {
   colors: colors,
   fonts: {
-    main: "'Inter', sans-serif",
+    main: "'Inter', sans-serif, arial, 'Helvetica Neue', Helvetica",
   },
   fontWeight: {
     light: 400,

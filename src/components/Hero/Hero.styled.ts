@@ -39,7 +39,7 @@ export const HeroTextSection = styled.div`
 export const HeroImgSection = styled.div`
   display: flex;
   position: relative;
-  flex: 0 0 clamp(72px, 25vw, 100px);
+  flex: 0 0 clamp(80px, 25vw, 125px);
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
