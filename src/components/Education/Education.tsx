@@ -5,7 +5,7 @@ import { EducationTexts } from '@/constants/texts';
 
 const Education = () => {
   return (
-    <EducationSection>
+    <EducationSection id="education">
       <Subtitle fontWeight={theme.fontWeight.light}>{EducationTexts.title}</Subtitle>
       <EducationList>
         {EducationTexts.education.map((education) => (

@@ -55,7 +55,7 @@ const renderProjectMedia = (media: ProjectMedia) => {
 
 const Projects = () => {
   return (
-    <ProjectsSection>
+    <ProjectsSection id="projects">
       <Subtitle fontWeight={theme.fontWeight.light}>{ProjectsTexts.title}</Subtitle>
       <ProjectsList>
         {ProjectsTexts.projects.map((project) => (

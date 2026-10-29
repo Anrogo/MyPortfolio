@@ -10,7 +10,7 @@ import { ExperienceTexts } from '@/constants/texts';
 
 const Experience = () => {
   return (
-    <ExperienceSection>
+    <ExperienceSection id="experience">
       <Subtitle fontWeight={theme.fontWeight.light}>{ExperienceTexts.title}</Subtitle>
       <ExperienceList>
         {ExperienceTexts.jobs.map((job) => (

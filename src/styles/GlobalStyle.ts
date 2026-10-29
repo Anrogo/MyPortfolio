@@ -7,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -17,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: ${theme.colors.blue4};
-    scroll-behavior: smooth;
   }
 `;
 
