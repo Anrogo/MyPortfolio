@@ -24,6 +24,21 @@ export const NavBarLinkItem = styled.li`
     font-size: 24px;
     line-height: 1;
   }
+
+  @media (max-width: 768px) {
+    font-size: ${theme.fontSize.md};
+    &:not(:last-child)::after {
+      margin: 0 12px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: ${theme.fontSize.sm};
+
+    &:not(:last-child)::after {
+      margin: 0 8px;
+    }
+  }
 `;
 
 export const NavBarLinkAnchor = styled.a`

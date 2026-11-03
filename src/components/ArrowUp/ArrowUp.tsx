@@ -4,12 +4,12 @@ import { ArrowUpIcon } from './ArrowUpIcon';
 
 const ArrowUp = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isHoverEnabled, setIsHoverEnabled] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsVisible(window.scrollY > 30);
     };
-
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -20,8 +20,15 @@ const ArrowUp = () => {
   return (
     <ArrowUpContainer>
       <ArrowUpButton
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        onClick={() => {
+          setIsHoverEnabled(false);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onMouseLeave={() => setIsHoverEnabled(true)}
         isVisible={isVisible}
+        $hoverEnabled={isHoverEnabled}
+        tabIndex={isVisible ? 0 : -1}
+        aria-label="Volver arriba"
       >
         <ArrowUpIcon />
       </ArrowUpButton>
