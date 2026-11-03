@@ -3,7 +3,7 @@ import CalculatorImg from '@/assets/images/calculadora_python.png';
 import ArgamingImg from '@/assets/images/portada_argaming.png';
 
 export const HomeTexts = {
-  myName: 'Antonio Rodríguez González',
+  myName: 'Hola, soy Antonio Rodríguez González',
   myPosition: 'Desarrollador Frontend',
   myDescription: 'Apasionado por el mundo de la programación y las nuevas tecnologías',
 };
@@ -230,4 +230,10 @@ export const EducationTexts: EducationText = {
       description: 'Bachillerato científico-tecnológico. En el instituto IES Los Cerros, Úbeda',
     },
   ],
+};
+
+export const NavBarLinkTexts = {
+  experience: 'Experiencia',
+  projects: 'Proyectos',
+  education: 'Educación',
 };

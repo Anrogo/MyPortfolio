@@ -1,4 +1,5 @@
 import AboutMe from '@/components/AboutMe/AboutMe';
+import ArrowUp from '@/components/ArrowUp/ArrowUp';
 import Copyright from '@/components/Copyright/Copyright';
 import Education from '@/components/Education/Education';
 import Experience from '@/components/Experience/Experience';
@@ -18,6 +19,7 @@ const Home = () => {
         <Projects />
         <Education />
         <Copyright />
+        <ArrowUp />
       </Container>
     </MainContainer>
   );

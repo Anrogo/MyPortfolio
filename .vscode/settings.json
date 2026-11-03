@@ -5,6 +5,6 @@
   "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "files.autoSave": "onFocusChange",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }

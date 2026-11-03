@@ -5,7 +5,7 @@ export const colors = {
   blue2: '#5957C4',
   blue3: '#8ED1FC',
   blue4: '#151392',
-  blue5: '#0F172A', // fav background
+  blue5: '#0F172A',
 
   /* Verdes */
   lightGreen: '#8CFF74',

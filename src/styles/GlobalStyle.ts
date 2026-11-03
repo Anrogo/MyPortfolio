@@ -115,6 +115,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   gap: 8px;
+  align-items: center;
 `;
 
 export const MainSection = styled.section`

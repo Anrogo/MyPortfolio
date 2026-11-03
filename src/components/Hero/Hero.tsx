@@ -15,7 +15,7 @@ const Hero = () => {
     <HeroSection id="hero">
       <HeroContainer>
         <HeroTextSection id="hero-section-left">
-          <Title>Hola, soy {HomeTexts.myName}</Title>
+          <Title>{HomeTexts.myName}</Title>
           <HeroSubtitle>{HomeTexts.myPosition}</HeroSubtitle>
           <Description>{HomeTexts.myDescription}</Description>
         </HeroTextSection>
