@@ -6,8 +6,11 @@ export default function Document() {
       <Head>
         {/* Etiquetas meta globales */}
         <meta name="description" content="Mi portfolio personal" />
-        <meta name="author" content="Tu Nombre" />
-        <meta name="keywords" content="portfolio, desarrollador, react, nextjs" />
+        <meta name="author" content="Antonio Rodríguez González" />
+        <meta
+          name="keywords"
+          content="portfolio, desarrollador, react, nextjs, typescript, web, móvil"
+        />
 
         {/* Favicon */}
         <link rel="icon" href="/icon.ico" />
