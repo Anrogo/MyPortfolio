@@ -5,9 +5,9 @@ import { Subtitle } from '@/styles/GlobalStyle';
 
 export const HeroContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: ${theme.spacing.md};
   box-shadow: 0px 0px 6px -4px;
   padding: 8px;
@@ -17,6 +17,14 @@ export const HeroContainer = styled.div`
     flex-direction: column;
     align-items: center;
   }
+`;
+
+export const HeroInformation = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: ${theme.spacing.md};
 `;
 
 export const HeroSection = styled.section`
