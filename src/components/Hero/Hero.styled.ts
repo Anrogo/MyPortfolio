@@ -8,7 +8,6 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${theme.spacing.md};
   box-shadow: 0px 0px 6px -4px;
   padding: 8px;
   border-radius: 32px;

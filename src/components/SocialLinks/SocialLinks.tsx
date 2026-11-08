@@ -12,13 +12,13 @@ const SocialLinks = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image src={LinkedinIcon} alt="Linkedin" width={32} height={32} />
+        <Image src={LinkedinIcon} alt="Linkedin" width={32} height={32} title="Linkedin" />
       </a>
       <a href="https://github.com/Anrogo" target="_blank" rel="noopener noreferrer">
-        <Image src={GithubIcon} alt="GitHub" width={32} height={32} />
+        <Image src={GithubIcon} alt="GitHub" width={32} height={32} title="GitHub" />
       </a>
       <a href="mailto:antoniorogo96@gmail.com" target="_blank" rel="noopener noreferrer">
-        <Image src={EmailIcon} alt="Email" width={32} height={32} />
+        <Image src={EmailIcon} alt="Email" width={32} height={32} title="Email" />
       </a>
     </SocialLinksContainer>
   );
