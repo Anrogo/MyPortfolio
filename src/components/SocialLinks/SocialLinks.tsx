@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { SocialLinksContainer } from './SocialLinks.styled';
 import LinkedinIcon from '@/assets/icons/linkedin.png';
 import GithubIcon from '@/assets/icons/github.png';
-import EmailIcon from '@/assets/icons/email.png';
+import EmailIcon from '@/assets/icons/email.svg';
 
 const SocialLinks = () => {
   return (
