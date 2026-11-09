@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowUpButton, ArrowUpContainer } from './ArrowUp.styled';
 import { ArrowUpIcon } from './ArrowUpIcon';
 
-const ArrowUp = () => {
+const ArrowUp = ({ label }: { label: string }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHoverEnabled, setIsHoverEnabled] = useState(true);
 
@@ -28,7 +28,7 @@ const ArrowUp = () => {
         isVisible={isVisible}
         $hoverEnabled={isHoverEnabled}
         tabIndex={isVisible ? 0 : -1}
-        aria-label="Volver arriba"
+        aria-label={label}
       >
         <ArrowUpIcon />
       </ArrowUpButton>

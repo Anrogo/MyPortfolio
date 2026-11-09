@@ -1,16 +1,27 @@
-import { EducationText, ExperienceText, ProjectsText } from '@/interfaces/Text';
+import type {
+  AboutMeText,
+  EducationText,
+  ExperienceText,
+  HomeText,
+  NavBarLinkText,
+  ProjectsText,
+  UiText,
+} from '@/interfaces/Text';
 import CalculatorImg from '@/assets/images/calculadora_python.png';
 import ArgamingImg from '@/assets/images/portada_argaming.png';
 
-export const HomeTexts = {
+export const HomeTexts: HomeText = {
   myName: 'Hola, soy Antonio Rodríguez González',
   myPosition: 'Desarrollador Frontend',
   myDescription: 'Apasionado por el mundo de la programación y las nuevas tecnologías',
+  profileImageAlt: 'Foto de perfil de Antonio',
 };
 
-export const AboutMeTexts = {
+export const AboutMeTexts: AboutMeText = {
+  title: 'Sobre mí',
   description:
-    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend, tras haber trabajado en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte siempre que saco un hueco.',
+    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend. Y anteriormente trabajé en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte.',
+  imageAlt: 'Persona usando un ordenador',
 };
 
 export const ExperienceTexts: ExperienceText = {
@@ -107,6 +118,7 @@ export const ExperienceTexts: ExperienceText = {
 
 export const ProjectsTexts: ProjectsText = {
   title: 'Proyectos destacados',
+  detailsLabel: 'Detalles',
   projects: [
     {
       title: 'Mi antiguo portfolio web',
@@ -232,8 +244,18 @@ export const EducationTexts: EducationText = {
   ],
 };
 
-export const NavBarLinkTexts = {
+export const NavBarLinkTexts: NavBarLinkText = {
   experience: 'Experiencia',
   projects: 'Proyectos',
   education: 'Educación',
+};
+
+export const UiTexts: UiText = {
+  changeLanguage: 'Cambiar idioma',
+  currentLanguage: 'Idioma actual',
+  spanish: 'español',
+  english: 'inglés',
+  activateDarkMode: 'Activar modo oscuro',
+  activateLightMode: 'Activar modo claro',
+  backToTop: 'Volver arriba',
 };

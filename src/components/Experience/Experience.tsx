@@ -6,14 +6,14 @@ import {
   ExperienceParagraph,
   ExperienceSection,
 } from './Experience.styled';
-import { ExperienceTexts } from '@/constants/texts_ES';
+import type { ExperienceText } from '@/interfaces/Text';
 
-const Experience = () => {
+const Experience = ({ texts }: { texts: ExperienceText }) => {
   return (
     <ExperienceSection id="experience">
-      <Subtitle fontWeight={theme.fontWeight.light}>{ExperienceTexts.title}</Subtitle>
+      <Subtitle fontWeight={theme.fontWeight.light}>{texts.title}</Subtitle>
       <ExperienceList>
-        {ExperienceTexts.jobs.map((job) => (
+        {texts.jobs.map((job) => (
           <ExperienceListDetail key={job.dates}>
             <Description>{job.dates}</Description>
             <br />

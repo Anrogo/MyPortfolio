@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import { ProjectsTexts } from '@/constants/texts_ES';
-import type { ProjectMedia, ProjectTextContent } from '@/interfaces/Text';
+import type { ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
 import { Description, Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 import {
@@ -53,19 +52,19 @@ const renderProjectMedia = (media: ProjectMedia) => {
   );
 };
 
-const Projects = () => {
+const Projects = ({ texts }: { texts: ProjectsText }) => {
   return (
     <ProjectsSection id="projects">
-      <Subtitle fontWeight={theme.fontWeight.light}>{ProjectsTexts.title}</Subtitle>
+      <Subtitle fontWeight={theme.fontWeight.light}>{texts.title}</Subtitle>
       <ProjectsList>
-        {ProjectsTexts.projects.map((project) => (
+        {texts.projects.map((project) => (
           <ProjectsLi key={project.title}>
             <Description>{project.title}</Description>
             <ProjectsDetails>
               <Paragraph>{renderProjectContent(project.description)}</Paragraph>
               {Boolean(project.details?.length || project.media) && (
                 <Details>
-                  <Summary>{project.detailsTitle ?? 'Detalles'}</Summary>
+                  <Summary>{project.detailsTitle ?? texts.detailsLabel}</Summary>
                   {project.detailsDescription && (
                     <Paragraph>{project.detailsDescription}</Paragraph>
                   )}

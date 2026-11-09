@@ -7,41 +7,53 @@ import Hero from '@/components/Hero/Hero';
 import NavBarLink from '@/components/NavBarLink/NavBarLink';
 import Projects from '@/components/Projects/Projects';
 import SiteConfiguration from '@/components/SiteConfiguration/SiteConfiguration';
-import { Language } from '@/interfaces/Text';
+import * as englishTexts from '@/constants/texts_EN';
+import * as spanishTexts from '@/constants/texts_ES';
+import type { Language, PortfolioTexts } from '@/interfaces/Text';
 import { Container, MainContainer } from '@/styles/GlobalStyle';
 import { useEffect, useState } from 'react';
 
+const textsByLanguage: Record<Language, PortfolioTexts> = {
+  es: spanishTexts,
+  en: englishTexts,
+};
+
 const Home = () => {
-  const [textsLanguage, setTextsLanguage] = useState<Language>('es');
-  const [texts, setTexts] = useState<typeof import('@/constants/texts_ES')>(
-    require('@/constants/texts_ES')
-  );
+  const [language, setLanguage] = useState<Language>('es');
+  const texts = textsByLanguage[language];
 
   useEffect(() => {
-    console.log('Idioma seleccionado:', textsLanguage);
-    if (textsLanguage === 'es') {
-      import('@/constants/texts_ES').then((module) => {
-        setTexts(module);
-      });
-    } else if (textsLanguage === 'en') {
-      import('@/constants/texts_EN').then((module) => {
-        setTexts(module);
-      });
+    const savedLanguage = sessionStorage.getItem('Language');
+    if (savedLanguage === 'es' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
     }
-  }, [textsLanguage]);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
+  const handleLanguageChange = (nextLanguage: Language) => {
+    setLanguage(nextLanguage);
+    sessionStorage.setItem('Language', nextLanguage);
+  };
 
   return (
     <MainContainer>
       <Container>
-        <SiteConfiguration onLanguageChange={setTextsLanguage} />
-        <Hero texts={texts} />
-        <NavBarLink />
-        <AboutMe />
-        <Experience />
-        <Projects />
-        <Education />
+        <SiteConfiguration
+          language={language}
+          uiTexts={texts.UiTexts}
+          onLanguageChange={handleLanguageChange}
+        />
+        <Hero texts={texts.HomeTexts} />
+        <NavBarLink texts={texts.NavBarLinkTexts} />
+        <AboutMe texts={texts.AboutMeTexts} />
+        <Experience texts={texts.ExperienceTexts} />
+        <Projects texts={texts.ProjectsTexts} />
+        <Education texts={texts.EducationTexts} />
         <Copyright />
-        <ArrowUp />
+        <ArrowUp label={texts.UiTexts.backToTop} />
       </Container>
     </MainContainer>
   );

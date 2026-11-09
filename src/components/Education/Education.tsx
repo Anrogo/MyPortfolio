@@ -1,14 +1,14 @@
 import { Description, Subtitle, Text } from '@/styles/GlobalStyle';
 import { EducationList, EducationListDetail, EducationSection } from './Education.styled';
 import { theme } from '@/styles/theme';
-import { EducationTexts } from '@/constants/texts_ES';
+import type { EducationText } from '@/interfaces/Text';
 
-const Education = () => {
+const Education = ({ texts }: { texts: EducationText }) => {
   return (
     <EducationSection id="education">
-      <Subtitle fontWeight={theme.fontWeight.light}>{EducationTexts.title}</Subtitle>
+      <Subtitle fontWeight={theme.fontWeight.light}>{texts.title}</Subtitle>
       <EducationList>
-        {EducationTexts.education.map((education) => (
+        {texts.education.map((education) => (
           <EducationListDetail key={education.dates}>
             <Description>{education.dates}</Description>
             <Text> {education.description}</Text>

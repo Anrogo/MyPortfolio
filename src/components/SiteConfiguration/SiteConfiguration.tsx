@@ -5,56 +5,51 @@ import {
   ToggleButton,
 } from './SiteConfiguration.styled';
 import Image from 'next/image';
-import { Language } from '@/interfaces/Text';
+import type { Language, UiText } from '@/interfaces/Text';
 
 interface SiteConfigurationProps {
-  onLanguageChange?: (language: Language) => void;
+  language: Language;
+  uiTexts: UiText;
+  onLanguageChange: (language: Language) => void;
 }
 
-const SiteConfiguration = ({ onLanguageChange }: SiteConfigurationProps) => {
+const SiteConfiguration = ({ language, uiTexts, onLanguageChange }: SiteConfigurationProps) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  const [language, setLanguage] = useState<Language>('es');
 
   const toggleDarkMode = () => {
-    console.log('Modo oscuro:', !isDarkMode);
     setIsDarkMode(!isDarkMode);
     sessionStorage.setItem('DarkMode', (!isDarkMode).toString());
   };
 
   const toggleLanguage = () => {
-    setLanguage((currentLanguage) => {
-      const nextLanguage = currentLanguage === 'es' ? 'en' : 'es';
-      onLanguageChange?.(nextLanguage);
-      sessionStorage.setItem('Language', nextLanguage);
-      return nextLanguage;
-    });
+    onLanguageChange(language === 'es' ? 'en' : 'es');
   };
 
   useEffect(() => {
     const darkModePreference = sessionStorage.getItem('DarkMode');
-    const languagePreference = sessionStorage.getItem('Language');
     if (darkModePreference) {
       setIsDarkMode(darkModePreference === 'true');
     }
-    if (languagePreference) {
-      setLanguage(languagePreference as Language);
-    }
-  }, [isDarkMode]);
-
-  useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
+  }, []);
 
   return (
     <SiteConfigurationContainer>
       <SiteConfigurationContent>
-        <ToggleButton onClick={toggleDarkMode}>{isDarkMode ? '🌙' : '☀️'}</ToggleButton>
+        <ToggleButton
+          type="button"
+          onClick={toggleDarkMode}
+          aria-label={isDarkMode ? uiTexts.activateLightMode : uiTexts.activateDarkMode}
+        >
+          {isDarkMode ? '🌙' : '☀️'}
+        </ToggleButton>
       </SiteConfigurationContent>
       <SiteConfigurationContent>
         <ToggleButton
           type="button"
           onClick={toggleLanguage}
-          aria-label={`Cambiar idioma. Idioma actual: ${language === 'es' ? 'español' : 'inglés'}`}
+          aria-label={`${uiTexts.changeLanguage}. ${uiTexts.currentLanguage}: ${
+            language === 'es' ? uiTexts.spanish : uiTexts.english
+          }`}
         >
           {language === 'es' ? (
             <Image src="/images/flags/spain.svg" alt="" width={24} height={16} />

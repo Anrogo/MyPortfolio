@@ -1,17 +1,17 @@
-import { NavBarLinkTexts } from '@/constants/texts_ES';
+import type { NavBarLinkText } from '@/interfaces/Text';
 import { NavBarLinkContainer, NavBarLinkItem, NavBarLinkAnchor } from './NavBarLink.styled';
 
-const NavBarLink = () => {
+const NavBarLink = ({ texts }: { texts: NavBarLinkText }) => {
   return (
     <NavBarLinkContainer>
       <NavBarLinkItem>
-        <NavBarLinkAnchor href="#experience">{NavBarLinkTexts.experience}</NavBarLinkAnchor>
+        <NavBarLinkAnchor href="#experience">{texts.experience}</NavBarLinkAnchor>
       </NavBarLinkItem>
       <NavBarLinkItem>
-        <NavBarLinkAnchor href="#projects">{NavBarLinkTexts.projects}</NavBarLinkAnchor>
+        <NavBarLinkAnchor href="#projects">{texts.projects}</NavBarLinkAnchor>
       </NavBarLinkItem>
       <NavBarLinkItem>
-        <NavBarLinkAnchor href="#education">{NavBarLinkTexts.education}</NavBarLinkAnchor>
+        <NavBarLinkAnchor href="#education">{texts.education}</NavBarLinkAnchor>
       </NavBarLinkItem>
     </NavBarLinkContainer>
   );

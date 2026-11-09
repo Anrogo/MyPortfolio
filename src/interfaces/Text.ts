@@ -30,22 +30,51 @@ export interface Education {
   description: string;
 }
 
+export interface HomeText {
+  myName: string;
+  myPosition: string;
+  myDescription: string;
+  profileImageAlt: string;
+}
+
+export interface AboutMeText {
+  title: string;
+  description: string;
+  imageAlt: string;
+}
+
+export interface NavBarLinkText {
+  experience: string;
+  projects: string;
+  education: string;
+}
+
+export interface UiText {
+  changeLanguage: string;
+  currentLanguage: string;
+  spanish: string;
+  english: string;
+  activateDarkMode: string;
+  activateLightMode: string;
+  backToTop: string;
+}
+
 export type ProjectTextContent = string | LinkDescription;
 
 export type ProjectMedia =
   | {
-    type: 'image';
-    src: StaticImageData;
-    width: number;
-    height: number;
-    alt: string;
-    className?: string;
-  }
+      type: 'image';
+      src: StaticImageData;
+      width: number;
+      height: number;
+      alt: string;
+      className?: string;
+    }
   | {
-    type: 'iframe';
-    src: string;
-    title: string;
-  };
+      type: 'iframe';
+      src: string;
+      title: string;
+    };
 
 export interface Project {
   title: string;
@@ -58,7 +87,18 @@ export interface Project {
 
 export interface ProjectsText {
   title: string;
+  detailsLabel: string;
   projects: Project[];
+}
+
+export interface PortfolioTexts {
+  HomeTexts: HomeText;
+  AboutMeTexts: AboutMeText;
+  ExperienceTexts: ExperienceText;
+  ProjectsTexts: ProjectsText;
+  EducationTexts: EducationText;
+  NavBarLinkTexts: NavBarLinkText;
+  UiTexts: UiText;
 }
 
 export type Language = 'es' | 'en';
