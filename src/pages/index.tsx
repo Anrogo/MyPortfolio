@@ -6,12 +6,14 @@ import Experience from '@/components/Experience/Experience';
 import Hero from '@/components/Hero/Hero';
 import NavBarLink from '@/components/NavBarLink/NavBarLink';
 import Projects from '@/components/Projects/Projects';
+import SiteConfiguration from '@/components/SiteConfiguration/SiteConfiguration';
 import { Container, MainContainer } from '@/styles/GlobalStyle';
 
 const Home = () => {
   return (
     <MainContainer>
       <Container>
+        <SiteConfiguration />
         <Hero />
         <NavBarLink />
         <AboutMe />

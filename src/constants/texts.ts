@@ -23,7 +23,7 @@ export const ExperienceTexts: ExperienceText = {
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
         after:
-          ', multinacional del sector financiero. Desarrollo aplicaciones web y móviles con tecnologías modernas como React, Angular, Next.js o Ionic.',
+          ', multinacional del sector financiero. Desarrollo aplicaciones web y móviles con tecnologías modernas como React, Angular, Next.js o Ionic. Funciones que realizo:',
       },
       detailsTitle: 'Detalles',
       details: [
@@ -40,7 +40,7 @@ export const ExperienceTexts: ExperienceText = {
         before: 'Previamente también trabajé como desarrollador de backend en ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
-        after: ' durante 1 año y 3 meses.',
+        after: ' durante 1 año y 3 meses. Funciones que llevaba a cabo: ',
       },
       detailsTitle: 'Detalles',
       details: [
