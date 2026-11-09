@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import { ProjectsTexts } from '@/constants/texts';
+import { ProjectsTexts } from '@/constants/texts_ES';
 import type { ProjectMedia, ProjectTextContent } from '@/interfaces/Text';
 import { Description, Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
@@ -66,7 +66,9 @@ const Projects = () => {
               {Boolean(project.details?.length || project.media) && (
                 <Details>
                   <Summary>{project.detailsTitle ?? 'Detalles'}</Summary>
-                  {project.detailsDescription && <Paragraph>{project.detailsDescription}</Paragraph>}
+                  {project.detailsDescription && (
+                    <Paragraph>{project.detailsDescription}</Paragraph>
+                  )}
                   {project.details && project.details.length > 0 && (
                     <ProjectsFeaturesList>
                       {project.details.map((detail, index) => (

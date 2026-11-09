@@ -1,4 +1,4 @@
-import { NavBarLinkTexts } from '@/constants/texts';
+import { NavBarLinkTexts } from '@/constants/texts_ES';
 import { NavBarLinkContainer, NavBarLinkItem, NavBarLinkAnchor } from './NavBarLink.styled';
 
 const NavBarLink = () => {

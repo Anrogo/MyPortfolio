@@ -6,7 +6,7 @@ import {
   ExperienceParagraph,
   ExperienceSection,
 } from './Experience.styled';
-import { ExperienceTexts } from '@/constants/texts';
+import { ExperienceTexts } from '@/constants/texts_ES';
 
 const Experience = () => {
   return (

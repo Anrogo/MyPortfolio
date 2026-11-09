@@ -1,4 +1,4 @@
-import { HomeTexts } from '@/constants/texts';
+import { HomeTexts } from '@/constants/texts_ES';
 import {
   HeroSection,
   HeroContainer,
@@ -12,15 +12,15 @@ import { Description, Title } from '@/styles/GlobalStyle';
 import profileImage from '@/assets/images/perfil-web.jpg';
 import SocialLinks from '../SocialLinks/SocialLinks';
 
-const Hero = () => {
+const Hero = ({ texts }: { texts: typeof import('@/constants/texts_ES') }) => {
   return (
     <HeroSection id="hero">
       <HeroContainer>
         <HeroInformation>
           <HeroTextSection id="hero-section-left">
-            <Title>{HomeTexts.myName}</Title>
-            <HeroSubtitle>{HomeTexts.myPosition}</HeroSubtitle>
-            <Description>{HomeTexts.myDescription}</Description>
+            <Title>{texts.HomeTexts.myName}</Title>
+            <HeroSubtitle>{texts.HomeTexts.myPosition}</HeroSubtitle>
+            <Description>{texts.HomeTexts.myDescription}</Description>
           </HeroTextSection>
           <HeroImgSection id="hero-section-right">
             <ProfileImage

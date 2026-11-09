@@ -4,10 +4,16 @@ import {
   SiteConfigurationContent,
   ToggleButton,
 } from './SiteConfiguration.styled';
+import Image from 'next/image';
+import { Language } from '@/interfaces/Text';
 
-const SiteConfiguration = () => {
+interface SiteConfigurationProps {
+  onLanguageChange?: (language: Language) => void;
+}
+
+const SiteConfiguration = ({ onLanguageChange }: SiteConfigurationProps) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  const [language, setLanguage] = useState<'es' | 'en'>('es');
+  const [language, setLanguage] = useState<Language>('es');
 
   const toggleDarkMode = () => {
     console.log('Modo oscuro:', !isDarkMode);
@@ -18,8 +24,8 @@ const SiteConfiguration = () => {
   const toggleLanguage = () => {
     setLanguage((currentLanguage) => {
       const nextLanguage = currentLanguage === 'es' ? 'en' : 'es';
+      onLanguageChange?.(nextLanguage);
       sessionStorage.setItem('Language', nextLanguage);
-      console.log('Idioma seleccionado:', nextLanguage);
       return nextLanguage;
     });
   };
@@ -31,7 +37,7 @@ const SiteConfiguration = () => {
       setIsDarkMode(darkModePreference === 'true');
     }
     if (languagePreference) {
-      setLanguage(languagePreference as 'es' | 'en');
+      setLanguage(languagePreference as Language);
     }
   }, [isDarkMode]);
 
@@ -42,7 +48,7 @@ const SiteConfiguration = () => {
   return (
     <SiteConfigurationContainer>
       <SiteConfigurationContent>
-        <ToggleButton onClick={toggleDarkMode}>Modo {isDarkMode ? '🌙' : '☀️'}</ToggleButton>
+        <ToggleButton onClick={toggleDarkMode}>{isDarkMode ? '🌙' : '☀️'}</ToggleButton>
       </SiteConfigurationContent>
       <SiteConfigurationContent>
         <ToggleButton
@@ -50,7 +56,11 @@ const SiteConfiguration = () => {
           onClick={toggleLanguage}
           aria-label={`Cambiar idioma. Idioma actual: ${language === 'es' ? 'español' : 'inglés'}`}
         >
-          Idioma {language.toUpperCase()}
+          {language === 'es' ? (
+            <Image src="/images/flags/spain.svg" alt="" width={24} height={16} />
+          ) : (
+            <Image src="/images/flags/uk.svg" alt="" width={24} height={16} />
+          )}
         </ToggleButton>
       </SiteConfigurationContent>
     </SiteConfigurationContainer>

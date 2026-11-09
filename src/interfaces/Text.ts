@@ -34,18 +34,18 @@ export type ProjectTextContent = string | LinkDescription;
 
 export type ProjectMedia =
   | {
-      type: 'image';
-      src: StaticImageData;
-      width: number;
-      height: number;
-      alt: string;
-      className?: string;
-    }
+    type: 'image';
+    src: StaticImageData;
+    width: number;
+    height: number;
+    alt: string;
+    className?: string;
+  }
   | {
-      type: 'iframe';
-      src: string;
-      title: string;
-    };
+    type: 'iframe';
+    src: string;
+    title: string;
+  };
 
 export interface Project {
   title: string;
@@ -60,3 +60,5 @@ export interface ProjectsText {
   title: string;
   projects: Project[];
 }
+
+export type Language = 'es' | 'en';

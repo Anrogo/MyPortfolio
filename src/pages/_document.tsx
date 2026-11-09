@@ -18,14 +18,12 @@ export default function Document() {
         {/* Meta Open Graph para redes sociales */}
         <meta property="og:title" content="Mi Portfolio" />
         <meta property="og:description" content="Bienvenido a mi web personal hecha con Next.js" />
-        <meta property="og:image" content={'/assets/images/preview.png'} />
         <meta property="og:type" content="website" />
 
         {/* Meta para Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Mi Portfolio" />
         <meta name="twitter:description" content="Bienvenido a mi web personal hecha con Next.js" />
-        <meta name="twitter:image" content="/assets/images/preview.png" />
       </Head>
       <body>
         <Main />

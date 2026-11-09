@@ -1,7 +1,7 @@
 import { Subtitle } from '@/styles/GlobalStyle';
 import { AboutMeDescription, AboutMeSection } from './AboutMe.styled';
 import { theme } from '@/styles/theme';
-import { AboutMeTexts } from '@/constants/texts';
+import { AboutMeTexts } from '@/constants/texts_ES';
 import Image from 'next/image';
 import technologist from '@/assets/images/man-technologist.png';
 
