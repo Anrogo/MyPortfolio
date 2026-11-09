@@ -31,7 +31,6 @@ const Hero = () => {
             />
           </HeroImgSection>
         </HeroInformation>
-
         <SocialLinks />
       </HeroContainer>
     </HeroSection>

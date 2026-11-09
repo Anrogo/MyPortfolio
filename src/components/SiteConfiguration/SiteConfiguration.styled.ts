@@ -40,24 +40,4 @@ export const ToggleButton = styled.button`
   }
 `;
 
-export const LanguageSelect = styled.select`
-  background-color: ${colors.blue2};
-  color: ${colors.white};
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 8px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-
-  &:hover {
-    border-color: 1px solid ${colors.blue3};
-  }
-`;
-
-export const LanguageOption = styled.option`
-  background-color: ${colors.blue2};
-  color: ${colors.white};
-  cursor: pointer;
-`;
 

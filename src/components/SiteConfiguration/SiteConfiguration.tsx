@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import {
-  LanguageOption,
-  LanguageSelect,
   SiteConfigurationContainer,
   SiteConfigurationContent,
   ToggleButton,
@@ -9,23 +7,37 @@ import {
 
 const SiteConfiguration = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [language, setLanguage] = useState<'es' | 'en'>('es');
 
   const toggleDarkMode = () => {
     console.log('Modo oscuro:', !isDarkMode);
     setIsDarkMode(!isDarkMode);
+    sessionStorage.setItem('DarkMode', (!isDarkMode).toString());
   };
 
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedLanguage = event.target.value;
-    console.log('Idioma seleccionado:', selectedLanguage);
+  const toggleLanguage = () => {
+    setLanguage((currentLanguage) => {
+      const nextLanguage = currentLanguage === 'es' ? 'en' : 'es';
+      sessionStorage.setItem('Language', nextLanguage);
+      console.log('Idioma seleccionado:', nextLanguage);
+      return nextLanguage;
+    });
   };
 
   useEffect(() => {
-    const darkModePreference = sessionStorage.getItem('darkMode');
+    const darkModePreference = sessionStorage.getItem('DarkMode');
+    const languagePreference = sessionStorage.getItem('Language');
     if (darkModePreference) {
       setIsDarkMode(darkModePreference === 'true');
     }
+    if (languagePreference) {
+      setLanguage(languagePreference as 'es' | 'en');
+    }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <SiteConfigurationContainer>
@@ -33,10 +45,13 @@ const SiteConfiguration = () => {
         <ToggleButton onClick={toggleDarkMode}>Modo {isDarkMode ? '🌙' : '☀️'}</ToggleButton>
       </SiteConfigurationContent>
       <SiteConfigurationContent>
-        <LanguageSelect onChange={handleLanguageChange}>
-          <LanguageOption value="es">Español</LanguageOption>
-          <LanguageOption value="en">Inglés</LanguageOption>
-        </LanguageSelect>
+        <ToggleButton
+          type="button"
+          onClick={toggleLanguage}
+          aria-label={`Cambiar idioma. Idioma actual: ${language === 'es' ? 'español' : 'inglés'}`}
+        >
+          Idioma {language.toUpperCase()}
+        </ToggleButton>
       </SiteConfigurationContent>
     </SiteConfigurationContainer>
   );
