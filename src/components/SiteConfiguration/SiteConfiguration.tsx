@@ -1,11 +1,13 @@
-import { useEffect, useState } from 'react';
 import {
   SiteConfigurationContainer,
   SiteConfigurationContent,
   ToggleButton,
 } from './SiteConfiguration.styled';
 import Image from 'next/image';
+import { useThemeMode } from '@/contexts/ThemeModeContext';
 import type { Language, UiText } from '@/interfaces/Text';
+import moonIcon from '@/assets/icons/moon.png';
+import sunIcon from '@/assets/icons/sun.png';
 
 interface SiteConfigurationProps {
   language: Language;
@@ -14,23 +16,15 @@ interface SiteConfigurationProps {
 }
 
 const SiteConfiguration = ({ language, uiTexts, onLanguageChange }: SiteConfigurationProps) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const { isDarkMode, setDarkMode } = useThemeMode();
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    sessionStorage.setItem('DarkMode', (!isDarkMode).toString());
+    setDarkMode(!isDarkMode);
   };
 
   const toggleLanguage = () => {
     onLanguageChange(language === 'es' ? 'en' : 'es');
   };
-
-  useEffect(() => {
-    const darkModePreference = sessionStorage.getItem('DarkMode');
-    if (darkModePreference) {
-      setIsDarkMode(darkModePreference === 'true');
-    }
-  }, []);
 
   return (
     <SiteConfigurationContainer>
@@ -40,7 +34,11 @@ const SiteConfiguration = ({ language, uiTexts, onLanguageChange }: SiteConfigur
           onClick={toggleDarkMode}
           aria-label={isDarkMode ? uiTexts.activateLightMode : uiTexts.activateDarkMode}
         >
-          {isDarkMode ? '🌙' : '☀️'}
+          {isDarkMode ? (
+            <Image key="moon" src={moonIcon} alt="Moon" width={24} height={24} />
+          ) : (
+            <Image key="sun" src={sunIcon} alt="Sun" width={24} height={24} />
+          )}
         </ToggleButton>
       </SiteConfigurationContent>
       <SiteConfigurationContent>
@@ -52,9 +50,23 @@ const SiteConfiguration = ({ language, uiTexts, onLanguageChange }: SiteConfigur
           }`}
         >
           {language === 'es' ? (
-            <Image src="/images/flags/spain.svg" alt="" width={24} height={16} />
+            <Image
+              className="flag"
+              key="spain"
+              src="/images/flags/spain.svg"
+              alt=""
+              width={24}
+              height={16}
+            />
           ) : (
-            <Image src="/images/flags/uk.svg" alt="" width={24} height={16} />
+            <Image
+              className="flag"
+              key="uk"
+              src="/images/flags/uk.svg"
+              alt=""
+              width={24}
+              height={16}
+            />
           )}
         </ToggleButton>
       </SiteConfigurationContent>

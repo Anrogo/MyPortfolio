@@ -20,7 +20,7 @@ export const HomeTexts: HomeText = {
 export const AboutMeTexts: AboutMeText = {
   title: 'Sobre mí',
   description:
-    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend. Y anteriormente trabajé en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte.',
+    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend. Anteriormente trabajé en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte.',
   imageAlt: 'Persona usando un ordenador',
 };
 

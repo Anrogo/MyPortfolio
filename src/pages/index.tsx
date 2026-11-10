@@ -9,6 +9,7 @@ import Projects from '@/components/Projects/Projects';
 import SiteConfiguration from '@/components/SiteConfiguration/SiteConfiguration';
 import * as englishTexts from '@/constants/texts_EN';
 import * as spanishTexts from '@/constants/texts_ES';
+import { useThemeMode } from '@/contexts/ThemeModeContext';
 import type { Language, PortfolioTexts } from '@/interfaces/Text';
 import { Container, MainContainer } from '@/styles/GlobalStyle';
 import { useEffect, useState } from 'react';
@@ -21,6 +22,7 @@ const textsByLanguage: Record<Language, PortfolioTexts> = {
 const Home = () => {
   const [language, setLanguage] = useState<Language>('es');
   const texts = textsByLanguage[language];
+  const { isDarkMode } = useThemeMode();
 
   useEffect(() => {
     const savedLanguage = sessionStorage.getItem('Language');
@@ -46,7 +48,7 @@ const Home = () => {
           uiTexts={texts.UiTexts}
           onLanguageChange={handleLanguageChange}
         />
-        <Hero texts={texts.HomeTexts} />
+        <Hero texts={texts.HomeTexts} darkTheme={isDarkMode} />
         <NavBarLink texts={texts.NavBarLinkTexts} />
         <AboutMe texts={texts.AboutMeTexts} />
         <Experience texts={texts.ExperienceTexts} />

@@ -12,7 +12,12 @@ import profileImage from '@/assets/images/perfil-web.jpg';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import type { HomeText } from '@/interfaces/Text';
 
-const Hero = ({ texts }: { texts: HomeText }) => {
+interface HeroProps {
+  texts: HomeText;
+  darkTheme: boolean;
+}
+
+const Hero = ({ texts, darkTheme }: HeroProps) => {
   return (
     <HeroSection id="hero">
       <HeroContainer>
@@ -31,7 +36,7 @@ const Hero = ({ texts }: { texts: HomeText }) => {
             />
           </HeroImgSection>
         </HeroInformation>
-        <SocialLinks />
+        <SocialLinks darkTheme={darkTheme} />
       </HeroContainer>
     </HeroSection>
   );

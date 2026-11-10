@@ -1,7 +1,12 @@
 import { colors } from '@/constants/colors';
 
-export const theme = {
-  colors: colors,
+export const defaultTheme = {
+  colors,
+  hoverColor: colors.blue1,
+  backgroundOverlay: 'rgba(0, 0, 0, 0)',
+  shadows: {
+    panel: '0px 10px 15px -3px rgba(15, 23, 42, 0.35)',
+  },
   fonts: {
     main: "'Inter', sans-serif, arial, 'Helvetica Neue', Helvetica",
   },
@@ -42,3 +47,24 @@ export const theme = {
     giant: '3.5rem', // 48px
   },
 };
+
+export const theme = defaultTheme;
+
+export const darkTheme = {
+  ...defaultTheme,
+  colors: {
+    ...colors,
+    blue0: '#1E293B', // panel
+    blue1: '#0F172A', // fondo
+    blue2: '#A5B4FC', // acento
+    blue4: '#E2E8F0', // texto
+  },
+  hoverColor: '#C4B5FD',
+  backgroundOverlay: 'rgba(15, 23, 42, 0.68)',
+  shadows: {
+    panel:
+      '0px 4px 15px 2px rgba(0, 0, 0, 0.35), 0px 0px 24px 2px rgba(165, 180, 252, 0.35)',
+  },
+};
+
+export type AppTheme = typeof defaultTheme;

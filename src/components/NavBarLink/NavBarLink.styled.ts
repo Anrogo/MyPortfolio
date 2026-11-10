@@ -20,7 +20,7 @@ export const NavBarLinkItem = styled.li`
   &:not(:last-child)::after {
     content: '·';
     margin: 0 16px;
-    color: ${theme.colors.blue2};
+    color: ${({ theme }) => theme.colors.blue2};
     font-size: 24px;
     line-height: 1;
   }
@@ -43,11 +43,11 @@ export const NavBarLinkItem = styled.li`
 
 export const NavBarLinkAnchor = styled.a`
   text-decoration: none;
-  color: ${theme.colors.blue4};
+  color: ${({ theme }) => theme.colors.blue4};
   font-weight: ${theme.fontWeight.medium};
   transition: color 0.3s ease;
 
   &:hover {
-    color: ${theme.colors.blue1};
+    color: ${({ theme }) => theme.hoverColor};
   }
 `;

@@ -1,4 +1,3 @@
-import { theme } from "@/styles/theme";
 import styled from "styled-components";
 
 export const ArrowUpContainer = styled.div`
@@ -27,8 +26,8 @@ export const ArrowUpContainer = styled.div`
 `;
 
 export const ArrowUpButton = styled.button<{ isVisible: boolean; $hoverEnabled: boolean }>`
-  background-color: ${theme.colors.blue2};
-  color: ${theme.colors.blue0};
+  background-color: ${({ theme }) => theme.colors.blue2};
+  color: ${({ theme }) => theme.colors.blue0};
   border: none;
   border-radius: 50%;
   width: 44px;
@@ -43,9 +42,9 @@ export const ArrowUpButton = styled.button<{ isVisible: boolean; $hoverEnabled: 
 
   @media (hover: hover) {
     &:hover {
-      background-color: ${({ $hoverEnabled }) =>
-		$hoverEnabled ? theme.colors.blue1 : theme.colors.blue2};
-      color: ${theme.colors.blue0};
+      background-color: ${({ $hoverEnabled, theme }) =>
+        $hoverEnabled ? theme.hoverColor : theme.colors.blue2};
+      color: ${({ theme }) => theme.colors.blue0};
 			
     }
   }

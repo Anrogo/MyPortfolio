@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 6px -4px;
+  box-shadow: 0px 0px 10px -4px;
   padding: 8px;
   border-radius: 32px;
 

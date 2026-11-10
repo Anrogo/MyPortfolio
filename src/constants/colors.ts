@@ -8,8 +8,8 @@ export const colors = {
   blue5: '#0F172A',
 
   /* Verdes */
-  lightGreen: '#8CFF74',
-  green2: '#94b8a3',
+  green1: '#94b8a3',
+  green2: '#8CFF74',
 
   /* Morados */
   lightPurple: '#C8A2C8',
