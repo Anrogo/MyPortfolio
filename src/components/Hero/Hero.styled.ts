@@ -46,8 +46,9 @@ export const HeroTextSection = styled.div`
 export const HeroImgSection = styled.div`
   display: flex;
   position: relative;
-  flex: 0 0 clamp(80px, 25vw, 125px);
-  aspect-ratio: 1;
+  flex: 0 0 auto;
+  width: clamp(80px, 25vw, 125px);
+  height: clamp(80px, 25vw, 125px);
   overflow: hidden;
   border-radius: 50%;
   margin: ${theme.spacing.sm};

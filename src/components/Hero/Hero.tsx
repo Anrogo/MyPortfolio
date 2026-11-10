@@ -33,6 +33,7 @@ const Hero = ({ texts, darkTheme }: HeroProps) => {
               alt={texts.profileImageAlt}
               fill
               sizes="(max-width: 768px) 180px, 280px"
+              placeholder="blur"
             />
           </HeroImgSection>
         </HeroInformation>
