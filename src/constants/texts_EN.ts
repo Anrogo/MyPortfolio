@@ -9,6 +9,8 @@ import type {
 } from '@/interfaces/Text';
 import CalculatorImg from '@/assets/images/calculadora_python.png';
 import ArgamingImg from '@/assets/images/portada_argaming.png';
+import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
+import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 
 export const HomeTexts: HomeText = {
   myName: 'Hi, I am Antonio Rodríguez González',
@@ -121,6 +123,82 @@ export const ProjectsTexts: ProjectsText = {
   title: 'Featured Projects',
   detailsLabel: 'Details',
   projects: [
+    {
+      title: 'Pepper Customers',
+      description:
+        'Mobile and web application for Pepper customers. It allows them to manage their products, personal information, and documents, as well as access improved benefits.',
+      detailsTitle: 'Details',
+      details: [
+        'Built with React, Ionic, and TypeScript.',
+        'Created in June 2025.',
+        'Optimized for mobile devices with Ionic. Available for both Android and iOS.',
+        {
+          before: 'Currently available at: ',
+          linkText: 'Pepper Customers web',
+          linkHref: 'https://pepperclientes.pepperfinance.es',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: PepperClientesImg,
+        width: 640,
+        height: 360,
+        alt: 'Pepper Customers web app home screen',
+        className: 'pepperClientesImg',
+      },
+    },
+    {
+      title: 'Pepper Cross-Selling Landing',
+      description:
+        'Responsive web application for Pepper customers. It allows access and contracting of new products such as personal loans or refinancing of other existing loans.',
+      detailsTitle: 'Details',
+      details: [
+        'Created with React, NextJS, and Typescript.',
+        'Created in September 2023.',
+        'Optimized for mobile devices with a carefully crafted responsive design.',
+        'Refactored and improved in 2026 to add refinancing options when an application for a new product is declined.',
+        'Access requires a link sent by SMS. It contains a verified token that is valid only for the preselected customer.',
+      ],
+    },
+    {
+      title: 'Pepper Merchants',
+      description:
+        'Mobile and web application for Pepper merchants. It allows merchants to manage their products, loans, and customers, as well as access statistics and reports.',
+      detailsTitle: 'Details',
+      details: [
+        'Built with React, Ionic, and TypeScript.',
+        'Created in July 2023.',
+        'Optimized for mobile devices with Ionic. Available for both Android and iOS.',
+        {
+          before: 'Currently available at: ',
+          linkText: 'Pepper Merchants web',
+          linkHref: 'https://peppercomercios.pepperfinance.es',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: PepperComerciosImg,
+        width: 640,
+        height: 360,
+        alt: 'Pepper Merchants web app home screen',
+        className: 'pepperComerciosImg',
+      },
+    },
+    {
+      title: 'Pepper Payment Landing',
+      description:
+        'Fully responsive single-page web application for Pepper customers. It allows them to access and pay outstanding debt, make early payments, or check upcoming payments.',
+      detailsTitle: 'Details',
+      details: [
+        'Built with React and TypeScript.',
+        'Created in February 2023.',
+        'Optimized for mobile devices with a carefully crafted responsive design.',
+        'I extensively refactored it in 2025, adding new features and performance improvements.',
+        'Access requires a link sent by SMS or through the Pepper Customers app. The link contains a verified token that is valid only for a specific customer.',
+      ],
+    },
     {
       title: 'My Previous Portfolio',
       description:

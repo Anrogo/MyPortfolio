@@ -148,13 +148,26 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
+      title: 'Landing de Venta Cruzada de Pepper',
+      description:
+        'Landing web de una única página para los clientes de Pepper. Permite acceder y contratar nuevos productos como préstamos personales o refinanciar otros préstamos existentes.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Creado con React, NextJS y Typescript.',
+        'Fecha de creación: Septiembre 2023.',
+        'Adaptado a móviles mediante un diseño responsive muy cuidado y optimizado.',
+        'Fue refactorizada y mejorada en 2026 para añadir opciones de refinanciación en el caso de que se rechace la contratación de un nuevo producto.',
+        'Para acceder es necesario un link que se envía en un sms. Este contiene un token verificado y válido solo para el cliente preseleccionado.'
+      ],
+    },
+    {
       title: 'Pepper Comercios',
       description:
         'Aplicación móvil y web para comercios de Pepper. Permite a los comercios gestionar sus productos, préstamos y clientes, así como acceder a estadísticas y reportes',
       detailsTitle: 'Detalles',
       details: [
         'Creado con React, Ionic y Typescript.',
-        'Fecha de creación: agosto 2023.',
+        'Fecha de creación: julio 2023.',
         'Adaptado a móviles mediante Ionic. Disponible tanto para Android como para iOS.',
         {
           before: 'Publicado actualmente en: ',
@@ -171,6 +184,19 @@ export const ProjectsTexts: ProjectsText = {
         alt: 'Pantalla de inicio de la aplicación web Pepper Comercios',
         className: 'pepperComerciosImg',
       },
+    },
+    {
+      title: 'Landing de pagos de Pepper',
+      description:
+        'Landing web de una única página totalmente responsive para los clientes de Pepper. Permite acceder y abonar pagos de deuda pendiente, adelantar pagos o consultar sus pagos futuros.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Creado con React y Typescript.',
+        'Fecha de creación: febrero 2023.',
+        'Adaptado a móviles mediante un diseño responsive muy cuidado y optimizado.',
+        'Fue refactorizada, por mi, en profundidad en 2025 además de incorporar nuevas funcionalidades y mejoras de rendimiento.',
+        'Para acceder es necesario un link que se envía en un sms, o bien desde la app de Clientes. Este enlace contiene un token verificado y válido solo para un cliente concreto.'
+      ],
     },
     {
       title: 'Mi antiguo portfolio web',
