@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import AboutMe from '@/components/AboutMe/AboutMe';
 import ArrowUp from '@/components/ArrowUp/ArrowUp';
 import Copyright from '@/components/Copyright/Copyright';
@@ -12,7 +13,6 @@ import * as spanishTexts from '@/constants/texts_ES';
 import { useThemeMode } from '@/contexts/ThemeModeContext';
 import type { Language, PortfolioTexts } from '@/interfaces/Text';
 import { Container, MainContainer } from '@/styles/GlobalStyle';
-import { useEffect, useState } from 'react';
 
 const textsByLanguage: Record<Language, PortfolioTexts> = {
   es: spanishTexts,

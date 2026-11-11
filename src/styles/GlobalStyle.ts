@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, styled } from 'styled-components';
 import { theme } from './theme';
 
 export const GlobalStyle = createGlobalStyle`
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     background-color: ${({ theme }) => theme.colors.blue1};
     background-image: ${({ theme }) =>
-    `linear-gradient(${theme.backgroundOverlay}, ${theme.backgroundOverlay}), url('/images/olivar.webp')`};
+      `linear-gradient(${theme.backgroundOverlay}, ${theme.backgroundOverlay}), url('/images/olivar.webp')`};
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

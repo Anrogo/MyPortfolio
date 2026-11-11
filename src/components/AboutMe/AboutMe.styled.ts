@@ -1,6 +1,6 @@
+import { styled } from 'styled-components';
 import { Description, MainSection } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
-import { styled } from 'styled-components';
 
 export const AboutMeSection = styled(MainSection)``;
 

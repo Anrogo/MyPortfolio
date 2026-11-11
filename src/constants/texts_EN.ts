@@ -1,3 +1,7 @@
+import CalculatorImg from '@/assets/images/calculadora_python.png';
+import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
+import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
+import ArgamingImg from '@/assets/images/portada_argaming.png';
 import type {
   AboutMeText,
   EducationText,
@@ -7,10 +11,6 @@ import type {
   ProjectsText,
   UiText,
 } from '@/interfaces/Text';
-import CalculatorImg from '@/assets/images/calculadora_python.png';
-import ArgamingImg from '@/assets/images/portada_argaming.png';
-import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
-import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 
 export const HomeTexts: HomeText = {
   myName: 'Hi, I am Antonio Rodríguez González',

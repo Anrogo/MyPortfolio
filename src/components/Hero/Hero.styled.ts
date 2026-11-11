@@ -1,7 +1,7 @@
-import { theme } from '@/styles/theme';
-import styled from 'styled-components';
 import NextImage from 'next/image';
+import { styled } from 'styled-components';
 import { Subtitle } from '@/styles/GlobalStyle';
+import { theme } from '@/styles/theme';
 
 export const HeroContainer = styled.div`
   display: flex;

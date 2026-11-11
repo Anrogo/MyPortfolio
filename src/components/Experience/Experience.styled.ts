@@ -1,6 +1,6 @@
+import { styled } from 'styled-components';
 import { MainSection, Paragraph, Text } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
-import { styled } from 'styled-components';
 
 export const ExperienceSection = styled(MainSection)``;
 

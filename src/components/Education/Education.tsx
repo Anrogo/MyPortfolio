@@ -1,7 +1,7 @@
-import { Description, Subtitle, Text } from '@/styles/GlobalStyle';
 import { EducationList, EducationListDetail, EducationSection } from './Education.styled';
-import { theme } from '@/styles/theme';
 import type { EducationText } from '@/interfaces/Text';
+import { Description, Subtitle, Text } from '@/styles/GlobalStyle';
+import { theme } from '@/styles/theme';
 
 const Education = ({ texts }: { texts: EducationText }) => {
   return (

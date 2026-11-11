@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from 'styled-components';
 
 export const ArrowUpContainer = styled.div`
   position: fixed;
@@ -25,7 +25,7 @@ export const ArrowUpContainer = styled.div`
   }
 `;
 
-export const ArrowUpButton = styled.button<{ isVisible: boolean; $hoverEnabled: boolean }>`
+export const ArrowUpButton = styled.button<{ $isVisible: boolean; $hoverEnabled: boolean }>`
   background-color: ${({ theme }) => theme.colors.blue2};
   color: ${({ theme }) => theme.colors.blue0};
   border: none;
@@ -37,15 +37,17 @@ export const ArrowUpButton = styled.button<{ isVisible: boolean; $hoverEnabled: 
   place-items: center;
   font-size: 24px;
   cursor: pointer;
-  opacity: ${(props) => (props.isVisible ? '1' : '0')};
-  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  opacity: ${(props) => (props.$isVisible ? '1' : '0')};
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease;
 
   @media (hover: hover) {
     &:hover {
       background-color: ${({ $hoverEnabled, theme }) =>
         $hoverEnabled ? theme.hoverColor : theme.colors.blue2};
       color: ${({ theme }) => theme.colors.blue0};
-			
     }
   }
 

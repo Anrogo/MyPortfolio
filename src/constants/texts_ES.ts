@@ -1,3 +1,7 @@
+import CalculatorImg from '@/assets/images/calculadora_python.png';
+import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
+import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
+import ArgamingImg from '@/assets/images/portada_argaming.png';
 import type {
   AboutMeText,
   EducationText,
@@ -7,10 +11,6 @@ import type {
   ProjectsText,
   UiText,
 } from '@/interfaces/Text';
-import CalculatorImg from '@/assets/images/calculadora_python.png';
-import ArgamingImg from '@/assets/images/portada_argaming.png';
-import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
-import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 
 export const HomeTexts: HomeText = {
   myName: 'Hola, soy Antonio Rodríguez González',
@@ -157,7 +157,7 @@ export const ProjectsTexts: ProjectsText = {
         'Fecha de creación: Septiembre 2023.',
         'Adaptado a móviles mediante un diseño responsive muy cuidado y optimizado.',
         'Fue refactorizada y mejorada en 2026 para añadir opciones de refinanciación en el caso de que se rechace la contratación de un nuevo producto.',
-        'Para acceder es necesario un link que se envía en un sms. Este contiene un token verificado y válido solo para el cliente preseleccionado.'
+        'Para acceder es necesario un link que se envía en un sms. Este contiene un token verificado y válido solo para el cliente preseleccionado.',
       ],
     },
     {
@@ -195,7 +195,7 @@ export const ProjectsTexts: ProjectsText = {
         'Fecha de creación: febrero 2023.',
         'Adaptado a móviles mediante un diseño responsive muy cuidado y optimizado.',
         'Fue refactorizada, por mi, en profundidad en 2025 además de incorporar nuevas funcionalidades y mejoras de rendimiento.',
-        'Para acceder es necesario un link que se envía en un sms, o bien desde la app de Clientes. Este enlace contiene un token verificado y válido solo para un cliente concreto.'
+        'Para acceder es necesario un link que se envía en un sms, o bien desde la app de Clientes. Este enlace contiene un token verificado y válido solo para un cliente concreto.',
       ],
     },
     {

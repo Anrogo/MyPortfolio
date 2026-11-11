@@ -1,8 +1,5 @@
-import type { ReactNode } from 'react';
 import Image from 'next/image';
-import type { ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
-import { Description, Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
-import { theme } from '@/styles/theme';
+import type { ReactNode } from 'react';
 import {
   IframeContainer,
   ImgContainer,
@@ -12,6 +9,9 @@ import {
   ProjectsList,
   ProjectsSection,
 } from './Projects.styled';
+import type { ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
+import { Description, Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
+import { theme } from '@/styles/theme';
 
 const renderProjectContent = (content: ProjectTextContent): ReactNode => {
   if (typeof content === 'string') {

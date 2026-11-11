@@ -1,13 +1,13 @@
+import Image from 'next/image';
 import {
   SiteConfigurationContainer,
   SiteConfigurationContent,
   ToggleButton,
 } from './SiteConfiguration.styled';
-import Image from 'next/image';
-import { useThemeMode } from '@/contexts/ThemeModeContext';
-import type { Language, UiText } from '@/interfaces/Text';
 import moonIcon from '@/assets/icons/moon.png';
 import sunIcon from '@/assets/icons/sun.png';
+import { useThemeMode } from '@/contexts/ThemeModeContext';
+import type { Language, UiText } from '@/interfaces/Text';
 
 interface SiteConfigurationProps {
   language: Language;

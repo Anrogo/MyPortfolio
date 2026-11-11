@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { SocialLinksContainer } from './SocialLinks.styled';
-import LinkedinIcon from '@/assets/icons/linkedin.png';
-import GithubIcon from '@/assets/icons/github.png';
 import EmailIcon from '@/assets/icons/email.svg';
 import DarkEmailIcon from '@/assets/icons/email2.png';
+import GithubIcon from '@/assets/icons/github.png';
 import DarkGithubIcon from '@/assets/icons/github2.png';
-import DarkLinkedinIcon from '@/assets/icons/linkedin.png';
+import LinkedinIcon from '@/assets/icons/linkedin.png';
+import DarkLinkedinIcon from '@/assets/icons/linkedin2.png';
 
 const SocialLinks = ({ darkTheme }: { darkTheme: boolean }) => {
   return (

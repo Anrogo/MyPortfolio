@@ -1,6 +1,6 @@
 // src/pages/_app.tsx
-import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
+import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { ThemeModeContext } from '@/contexts/ThemeModeContext';
 import { GlobalStyle } from '@/styles/GlobalStyle';

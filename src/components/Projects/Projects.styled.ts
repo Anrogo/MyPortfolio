@@ -1,5 +1,5 @@
+import { styled } from 'styled-components';
 import { Li, MainSection } from '@/styles/GlobalStyle';
-import styled from 'styled-components';
 
 export const ProjectsSection = styled(MainSection)``;
 

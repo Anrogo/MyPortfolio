@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import { keyframes, styled } from 'styled-components';
 
 export const SiteConfigurationContainer = styled.div`
   position: absolute;
@@ -43,7 +43,6 @@ const flagEnter = keyframes`
   }
 `;
 
-
 export const ToggleButton = styled.button`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.white};
@@ -68,5 +67,3 @@ export const ToggleButton = styled.button`
     }
   }
 `;
-
-

@@ -1,5 +1,5 @@
-import type { NavBarLinkText } from '@/interfaces/Text';
 import { NavBarLinkContainer, NavBarLinkItem, NavBarLinkAnchor } from './NavBarLink.styled';
+import type { NavBarLinkText } from '@/interfaces/Text';
 
 const NavBarLink = ({ texts }: { texts: NavBarLinkText }) => {
   return (

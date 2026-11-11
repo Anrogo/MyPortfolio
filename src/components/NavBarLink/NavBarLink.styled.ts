@@ -1,5 +1,5 @@
-import { theme } from "@/styles/theme";
-import styled from "styled-components";
+import { styled } from 'styled-components';
+import { theme } from '@/styles/theme';
 
 export const NavBarLinkContainer = styled.ul`
   list-style-type: none;

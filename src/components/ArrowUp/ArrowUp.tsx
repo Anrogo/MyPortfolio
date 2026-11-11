@@ -25,7 +25,7 @@ const ArrowUp = ({ label }: { label: string }) => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
         onMouseLeave={() => setIsHoverEnabled(true)}
-        isVisible={isVisible}
+        $isVisible={isVisible}
         $hoverEnabled={isHoverEnabled}
         tabIndex={isVisible ? 0 : -1}
         aria-label={label}

@@ -1,3 +1,4 @@
+import SocialLinks from '../SocialLinks/SocialLinks';
 import {
   HeroSection,
   HeroContainer,
@@ -7,10 +8,9 @@ import {
   HeroSubtitle,
   HeroInformation,
 } from './Hero.styled';
-import { Description, Title } from '@/styles/GlobalStyle';
 import profileImage from '@/assets/images/perfil-web.jpg';
-import SocialLinks from '../SocialLinks/SocialLinks';
 import type { HomeText } from '@/interfaces/Text';
+import { Description, Title } from '@/styles/GlobalStyle';
 
 interface HeroProps {
   texts: HomeText;
