@@ -32,6 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
+          {this.props.styles}
           {/* Etiquetas meta globales */}
           <meta name="description" content="Mi portfolio personal" />
           <meta name="author" content="Antonio Rodríguez González" />

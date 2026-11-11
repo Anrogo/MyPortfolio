@@ -9,6 +9,8 @@ import type {
 } from '@/interfaces/Text';
 import CalculatorImg from '@/assets/images/calculadora_python.png';
 import ArgamingImg from '@/assets/images/portada_argaming.png';
+import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
+import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 
 export const HomeTexts: HomeText = {
   myName: 'Hola, soy Antonio Rodríguez González',
@@ -42,7 +44,7 @@ export const ExperienceTexts: ExperienceText = {
         'Optimización de funcionalidades y diseño para mejorar la experiencia de usuario (UX/UI).',
         'Pruebas y validaciones para garantizar rendimiento y estabilidad.',
         'Colaboración con equipos multidisciplinares en entornos ágiles.',
-        'Mantenimiento y evolución continua de las aplicaciones.',
+        'Mantenimiento y evolución continua de las distintas aplicaciones.',
       ],
     },
     {
@@ -87,7 +89,7 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'Febrero - marzo 2021:',
       description:
-        'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
+        'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo elinventario y revisión de equipos. También me he encargado de la resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
     },
     {
       dates: 'Abril - junio 2020:',
@@ -121,6 +123,56 @@ export const ProjectsTexts: ProjectsText = {
   detailsLabel: 'Detalles',
   projects: [
     {
+      title: 'Pepper Clientes',
+      description:
+        'Aplicación móvil y web para los clientes de Pepper. Permite a los clientes gestionar sus productos, datos y documentación, así como acceder a mejores prestaciones.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Creado con React, Ionic y Typescript.',
+        'Fecha de creación: junio 2025.',
+        'Adaptado a móviles mediante Ionic. Disponible tanto para Android como para iOS.',
+        {
+          before: 'Publicado actualmente en: ',
+          linkText: 'Pepper Clientes web',
+          linkHref: 'https://pepperclientes.pepperfinance.es',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: PepperClientesImg,
+        width: 640,
+        height: 360,
+        alt: 'Pantalla de inicio de la aplicación web Pepper Clientes',
+        className: 'pepperClientesImg',
+      },
+    },
+    {
+      title: 'Pepper Comercios',
+      description:
+        'Aplicación móvil y web para comercios de Pepper. Permite a los comercios gestionar sus productos, préstamos y clientes, así como acceder a estadísticas y reportes',
+      detailsTitle: 'Detalles',
+      details: [
+        'Creado con React, Ionic y Typescript.',
+        'Fecha de creación: agosto 2023.',
+        'Adaptado a móviles mediante Ionic. Disponible tanto para Android como para iOS.',
+        {
+          before: 'Publicado actualmente en: ',
+          linkText: 'Pepper Comercios web',
+          linkHref: 'https://peppercomercios.pepperfinance.es',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: PepperComerciosImg,
+        width: 640,
+        height: 360,
+        alt: 'Pantalla de inicio de la aplicación web Pepper Comercios',
+        className: 'pepperComerciosImg',
+      },
+    },
+    {
       title: 'Mi antiguo portfolio web',
       description:
         'Creado en noviembre 2021 y actualizado durante los años posteriores. Refleja mis comienzos como desarrollador web y la búsqueda de mostrarme al mundo laboral con un diseño moderno y fluido.',
@@ -135,7 +187,7 @@ export const ProjectsTexts: ProjectsText = {
           before: 'GitHub: ',
           linkText: 'portfolio v1',
           linkHref: 'https://github.com/Anrogo/Web-Portfolio',
-          after: '',
+          after: '.',
         },
       ],
     },
@@ -152,7 +204,7 @@ export const ProjectsTexts: ProjectsText = {
           before: 'GitHub: ',
           linkText: 'blog Argaming',
           linkHref: 'https://github.com/Anrogo/Proyecto-final-DAW---ARGaming',
-          after: '',
+          after: '.',
         },
       ],
       media: {
@@ -177,7 +229,7 @@ export const ProjectsTexts: ProjectsText = {
           linkText: 'HealthyCook App',
           linkHref:
             'https://www.figma.com/proto/EUhjwcPGLIoAh10vOgVlHZ/Mockups-Healthycook-App?node-id=34%3A124&scaling=scale-down&page-id=0%3A1&starting-point-node-id=34%3A124',
-          after: '',
+          after: '.',
         },
       ],
       media: {
@@ -205,7 +257,7 @@ export const ProjectsTexts: ProjectsText = {
           before: 'GitHub: ',
           linkText: 'calculadora',
           linkHref: 'https://github.com/Anrogo/Python-Curse/tree/master/Tkinter/Calculadora',
-          after: '',
+          after: '.',
         },
       ],
       media: {
