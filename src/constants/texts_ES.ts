@@ -89,7 +89,7 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'Febrero - marzo 2021:',
       description:
-        'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo elinventario y revisión de equipos. También me he encargado de la resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
+        'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo el inventario y revisión de equipos. También me he encargado de la resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
     },
     {
       dates: 'Abril - junio 2020:',
