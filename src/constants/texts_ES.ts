@@ -30,7 +30,7 @@ export const ExperienceTexts: ExperienceText = {
   title: 'Experiencia profesional',
   jobs: [
     {
-      dates: 'Septiembre 2023 - Actualidad:',
+      dates: 'Septiembre 2023 - actualidad:',
       linkDescription: {
         before: 'Llevo más de 3 años trabajando como desarrollador frontend en ',
         linkText: 'Pepper Financial Services Group',
