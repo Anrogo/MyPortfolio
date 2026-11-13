@@ -99,7 +99,7 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'Noviembre 2018 - octubre 2019:',
       description:
-        'Trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. He aprendido muchísimo durante este año y algunas de las muchas tareas desarrolladas han sido:',
+        'Trabajé como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. He aprendido muchísimo durante este año y algunas de las muchas tareas desarrolladas han sido:',
       detailsTitle: 'Detalles',
       details: [
         'Administración de sistemas y redes.',
@@ -113,7 +113,7 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'Marzo - junio 2018: ',
       description:
-        'Formación en centro de trabajo con Soluciones Center SCA (FCT) del CFGS ASIR. Aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Recibí además una carta de recomendación de la empresa y dos certificados de especialista en PrestaShop y WordPress.',
+        'Formación en centro de trabajo con Soluciones Center SCA (FCT) del CFGS ASIR. Realicé un aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Además, recibí una carta de recomendación de la empresa y dos certificados de especialista en PrestaShop y WordPress.',
     },
   ],
 };
