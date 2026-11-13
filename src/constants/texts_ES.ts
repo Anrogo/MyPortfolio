@@ -1,7 +1,8 @@
 import CalculatorImg from '@/assets/images/calculadora_python.png';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
-import ArgamingImg from '@/assets/images/portada_argaming.png';
+import ArgamingImg from '@/assets/images/portada_argaming.webp';
+import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
 import type {
   AboutMeText,
   EducationText,
@@ -208,7 +209,12 @@ export const ProjectsTexts: ProjectsText = {
       details: [
         'Creado exclusivamente con HTML, CSS y JS. Y con PHP para el envío de correos de contacto.',
         'Fecha de creación: 18 de noviembre de 2021.',
-        'Publicado hasta 2026 en https://antonioweb.es.',
+        {
+          before: 'Publicado hasta 2026 en ',
+          linkText: 'https://antonioweb.es',
+          linkHref: 'https://portfolio-web-lake-tau.vercel.app',
+          after: '.',
+        },
         {
           before: 'GitHub: ',
           linkText: 'portfolio v1',
@@ -216,6 +222,14 @@ export const ProjectsTexts: ProjectsText = {
           after: '.',
         },
       ],
+      media: {
+        type: 'image',
+        src: OldPortfolioImg,
+        width: 600,
+        height: 300,
+        alt: 'Portada del antiguo portfolio web de Antonio',
+        className: 'portfolioImg',
+      },
     },
     {
       title: 'Blog Argaming',

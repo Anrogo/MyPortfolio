@@ -1,7 +1,7 @@
 import CalculatorImg from '@/assets/images/calculadora_python.png';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
-import ArgamingImg from '@/assets/images/portada_argaming.png';
+import ArgamingImg from '@/assets/images/portada_argaming.webp';
 import type {
   AboutMeText,
   EducationText,

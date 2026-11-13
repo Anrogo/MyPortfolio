@@ -11,6 +11,18 @@ export const SiteConfigurationContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 8px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    padding: 0px;
+    justify-content: end;
+  }
+
+  @media (max-width: 500px) {
+    padding: 8px;
+  }
 `;
 
 export const SiteConfigurationContent = styled.div`

@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
 import { theme } from '@/styles/theme';
+import { Link } from '@/styles/GlobalStyle';
 
 export const NavBarLinkContainer = styled.ul`
   list-style-type: none;
@@ -36,15 +37,12 @@ export const NavBarLinkItem = styled.li`
     font-size: ${theme.fontSize.sm};
 
     &:not(:last-child)::after {
-      margin: 0 8px;
+      margin: 0 4px;
     }
   }
 `;
 
-export const NavBarLinkAnchor = styled.a`
-  text-decoration: none;
-  color: ${({ theme }) => theme.colors.blue4};
-  font-weight: ${theme.fontWeight.medium};
+export const NavBarLinkAnchor = styled(Link)`
   transition: color 0.3s ease;
 
   &:hover {
