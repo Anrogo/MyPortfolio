@@ -24,6 +24,11 @@ export const HeroInformation = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: ${theme.spacing.md};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const HeroSection = styled.section`

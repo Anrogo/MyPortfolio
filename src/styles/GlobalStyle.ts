@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     background-color: ${({ theme }) => theme.colors.blue1};
     background-image: ${({ theme }) =>
-      `linear-gradient(${theme.backgroundOverlay}, ${theme.backgroundOverlay}), url('/images/olivar.webp')`};
+    `linear-gradient(${theme.backgroundOverlay}, ${theme.backgroundOverlay}), url('/images/olivar.webp')`};
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,5 +152,6 @@ export const Summary = styled.summary`
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.blue2};
+  font-weight: ${theme.fontWeight.bold};
   text-decoration: none;
 `;
