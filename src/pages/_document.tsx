@@ -41,6 +41,9 @@ export default class MyDocument extends Document {
             name="keywords"
             content="portfolio, desarrollador, react, nextjs, typescript, web, móvil"
           />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="robots" content="index, follow" />
+          <meta name="language" content="es, en" />
 
           {/* Favicon */}
           <link rel="icon" href="/icon.ico" />
