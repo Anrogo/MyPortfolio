@@ -6,6 +6,7 @@ export const colors = {
   blue3: '#8ED1FC',
   blue4: '#151392',
   blue5: '#0F172A',
+  downloadBlue: '#346af8',
 
   /* Verdes */
   green1: '#94b8a3',

@@ -11,6 +11,7 @@ import {
 import profileImage from '@/assets/images/perfil-web.jpg';
 import type { HomeText } from '@/interfaces/Text';
 import { Description, Title } from '@/styles/GlobalStyle';
+import { DownloadButton } from '../DownloadButton/DownloadButton';
 
 interface HeroProps {
   texts: HomeText;
@@ -38,6 +39,7 @@ const Hero = ({ texts, darkTheme }: HeroProps) => {
           </HeroImgSection>
         </HeroInformation>
         <SocialLinks darkTheme={darkTheme} />
+        <DownloadButton darkTheme={darkTheme} />
       </HeroContainer>
     </HeroSection>
   );
