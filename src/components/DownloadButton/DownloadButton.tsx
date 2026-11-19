@@ -1,17 +1,16 @@
-import Image from 'next/image';
-import { CvButton, DownloadButtonContainer } from './DownloadButton.styled';
+import { CvButton, CvIcon, DownloadButtonContainer } from './DownloadButton.styled';
 import DownloadIcon from '@/assets/icons/descargar.png';
 
-export const DownloadButton = ({ darkTheme }: { darkTheme: boolean }) => {
+export const DownloadButton = () => {
   return (
     <DownloadButtonContainer>
       <CvButton
-        href="/cv/Antonio_Rodriguez_Gonzalez_CV.pdf"
+        href="/cv/CV_Antonio_Rodriguez_Gonzalez.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
         Descargar CV
-        <Image src={DownloadIcon} alt="Descargar CV" width={32} height={32} />
+        <CvIcon $src={DownloadIcon.src} aria-hidden="true" />
       </CvButton>
     </DownloadButtonContainer>
   );

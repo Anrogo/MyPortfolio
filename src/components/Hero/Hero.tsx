@@ -39,7 +39,7 @@ const Hero = ({ texts, darkTheme }: HeroProps) => {
           </HeroImgSection>
         </HeroInformation>
         <SocialLinks darkTheme={darkTheme} />
-        <DownloadButton darkTheme={darkTheme} />
+        <DownloadButton />
       </HeroContainer>
     </HeroSection>
   );

@@ -1,12 +1,21 @@
-import { colors } from "@/constants/colors";
-import { Link } from "@/styles/GlobalStyle";
-import styled from "styled-components";
+import { styled } from 'styled-components';
+import { Link } from '@/styles/GlobalStyle';
 
 export const DownloadButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+`;
+
+export const CvIcon = styled.span<{ $src: string }>`
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: ${({ theme }) => theme.colors.downloadBlue};
+  mask: ${({ $src }) => `url("${$src}") center / contain no-repeat`};
+  -webkit-mask: ${({ $src }) => `url("${$src}") center / contain no-repeat`};
+  transition: background-color 0.3s ease;
 `;
 
 export const CvButton = styled(Link)`
@@ -16,16 +25,12 @@ export const CvButton = styled(Link)`
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 32px;
-  color: ${colors.downloadBlue};
-  border: 1px solid ${colors.downloadBlue};
+  color: ${({ theme }) => theme.colors.downloadBlue};
+  border: 1px solid ${({ theme }) => theme.colors.downloadBlue};
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
     border-color 0.3s ease;
-
-  img {
-    transition: filter 0.3s ease;
-  }
 
   &&:hover {
     background-color: #005bb5;
@@ -33,7 +38,7 @@ export const CvButton = styled(Link)`
     border-color: #fff;
   }
 
-  &&:hover img {
-    filter: brightness(0) invert(1);
+  &&:hover ${CvIcon} {
+    background-color: #fff;
   }
 `;

@@ -58,6 +58,7 @@ export const darkTheme = {
     blue1: '#0F172A', // fondo
     blue2: '#A5B4FC', // acento
     blue4: '#E2E8F0', // texto
+    downloadBlue: '#7b9bec',
   },
   hoverColor: '#C4B5FD',
   backgroundOverlay: 'rgba(15, 23, 42, 0.68)',
