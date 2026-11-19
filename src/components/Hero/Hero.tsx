@@ -1,3 +1,4 @@
+import { DownloadButton } from '../DownloadButton/DownloadButton';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import {
   HeroSection,
@@ -11,7 +12,6 @@ import {
 import profileImage from '@/assets/images/perfil-web.jpg';
 import type { HomeText } from '@/interfaces/Text';
 import { Description, Title } from '@/styles/GlobalStyle';
-import { DownloadButton } from '../DownloadButton/DownloadButton';
 
 interface HeroProps {
   texts: HomeText;

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import AboutMe from '@/components/AboutMe/AboutMe';
 import ArrowUp from '@/components/ArrowUp/ArrowUp';
@@ -41,23 +42,28 @@ const Home = () => {
   };
 
   return (
-    <MainContainer>
-      <Container>
-        <SiteConfiguration
-          language={language}
-          uiTexts={texts.UiTexts}
-          onLanguageChange={handleLanguageChange}
-        />
-        <Hero texts={texts.HomeTexts} darkTheme={isDarkMode} />
-        <NavBarLink texts={texts.NavBarLinkTexts} />
-        <AboutMe texts={texts.AboutMeTexts} />
-        <Experience texts={texts.ExperienceTexts} />
-        <Projects texts={texts.ProjectsTexts} />
-        <Education texts={texts.EducationTexts} />
-        <Copyright />
-        <ArrowUp label={texts.UiTexts.backToTop} />
-      </Container>
-    </MainContainer>
+    <>
+      <Head>
+        <title>Portfolio</title>
+      </Head>
+      <MainContainer>
+        <Container>
+          <SiteConfiguration
+            language={language}
+            uiTexts={texts.UiTexts}
+            onLanguageChange={handleLanguageChange}
+          />
+          <Hero texts={texts.HomeTexts} darkTheme={isDarkMode} />
+          <NavBarLink texts={texts.NavBarLinkTexts} />
+          <AboutMe texts={texts.AboutMeTexts} />
+          <Experience texts={texts.ExperienceTexts} />
+          <Projects texts={texts.ProjectsTexts} />
+          <Education texts={texts.EducationTexts} />
+          <Copyright />
+          <ArrowUp label={texts.UiTexts.backToTop} />
+        </Container>
+      </MainContainer>
+    </>
   );
 };
 

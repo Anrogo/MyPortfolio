@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
-import { theme } from '@/styles/theme';
 import { Link } from '@/styles/GlobalStyle';
+import { theme } from '@/styles/theme';
 
 export const NavBarLinkContainer = styled.ul`
   list-style-type: none;
