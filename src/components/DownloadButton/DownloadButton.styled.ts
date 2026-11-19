@@ -16,6 +16,11 @@ export const CvIcon = styled.span<{ $src: string }>`
   mask: ${({ $src }) => `url("${$src}") center / contain no-repeat`};
   -webkit-mask: ${({ $src }) => `url("${$src}") center / contain no-repeat`};
   transition: background-color 0.3s ease;
+
+  @media (max-width: 500px) {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 export const CvButton = styled(Link)`
@@ -32,13 +37,19 @@ export const CvButton = styled(Link)`
     color 0.3s ease,
     border-color 0.3s ease;
 
-  &&:hover {
+  &:hover {
     background-color: #005bb5;
     color: #fff;
     border-color: #fff;
   }
 
-  &&:hover ${CvIcon} {
+  &:hover ${CvIcon} {
     background-color: #fff;
   }
+
+  @media (max-width: 500px) {
+    padding: 0.25rem 0.5rem;
+    gap: 0.25rem;
+    font-size: ${({ theme }) => theme.fontSize.sm};
+};
 `;
