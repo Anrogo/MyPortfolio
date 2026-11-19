@@ -32,11 +32,11 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'September 2023 - Present:',
       linkDescription: {
-        before: 'I have worked as a frontend developer for over 3 years at ',
+        before: 'I have worked as a front-end developer for over three years at ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
         after:
-          ', a multinational financial services company. I build web and mobile applications using modern technologies such as React, Angular, Next.js, and Ionic. My responsibilities include:',
+          ', a multinational financial services company. I build web and mobile applications using modern technologies such as React, Angular, NextJS, and Ionic. My responsibilities include:',
       },
       detailsTitle: 'Responsibilities',
       details: [
@@ -50,10 +50,10 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'June 2022 - September 2023:',
       linkDescription: {
-        before: 'Previously, I also worked as a backend developer at ',
+        before: 'Previously, I worked as a back-end developer at ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
-        after: ' for 1 year and 3 months. My responsibilities included:',
+        after: ' for one year and three months. My responsibilities included:',
       },
       detailsTitle: 'Responsibilities',
       details: [
@@ -71,10 +71,10 @@ export const ExperienceTexts: ExperienceText = {
       dates: 'March - June 2022:',
       linkDescription: {
         before:
-          'My work placement (FCT) for the Higher Vocational Degree in Multiplatform Application Development was completed at ',
+          'I completed my work placement (FCT) as part of my Higher Technician qualification in Multiplatform Application Development at ',
         linkText: 'VMLY&R',
         linkHref: 'https://www.vmlyr.com/es-es/spain',
-        after: ', part of WPP and located at 26 Ríos Rosas Street, Madrid.',
+        after: ', part of WPP and based at 26 Ríos Rosas Street in Madrid.',
       },
       detailsTitle: 'Responsibilities',
       details: [
@@ -82,25 +82,25 @@ export const ExperienceTexts: ExperienceText = {
         'Loading data with Microsoft Azure Storage Explorer and Hermes.',
         'Querying, extracting, and processing data in Oracle.',
         'Creating and modifying queries.',
-        'Analyzing and automating processes in Oracle.',
+        'Analysing and automating processes in Oracle.',
         'Running queries in Dynamics.',
-        'Analyzing, designing, and automating manual processes.',
+        'Analysing, designing, and automating manual processes.',
       ],
     },
     {
       dates: 'February - March 2021:',
       description:
-        'I worked as an IT technician for a company in my hometown of Úbeda. My work ranged from inventorying and inspecting equipment to troubleshooting software and hardware issues, printers, and network connections.',
+        'I worked as an IT technician for a company in my hometown of Úbeda. My work included carrying out equipment inventories and inspections, as well as troubleshooting software and hardware problems, printer faults, and network connectivity issues.',
     },
     {
       dates: 'April - June 2020:',
       description:
-        'I completed my Web Application Development work placement (FCT) remotely with Soluciones Center SCA. My tasks involved web development, hosting, troubleshooting, and expanding my WordPress and PrestaShop knowledge through courses and new assignments.',
+        'I completed my Web Application Development work placement (FCT) remotely with Soluciones Center SCA. My tasks involved web development, hosting, troubleshooting, and expanding my knowledge of WordPress and PrestaShop through courses and new assignments.',
     },
     {
       dates: 'November 2018 - October 2019:',
       description:
-        'I worked as a SEPI Foundation intern in the “Introduction to Business” program, from November 1, 2018, to October 31, 2019. I learned a great deal during that year. Some of my responsibilities included:',
+        'I worked as an intern with the SEPI Foundation as part of the “Introduction to Business” programme from 1 November 2018 to 31 October 2019. I learned a great deal during that year. My responsibilities included:',
       detailsTitle: 'Responsibilities',
       details: [
         'Administering systems and networks.',
@@ -114,7 +114,7 @@ export const ExperienceTexts: ExperienceText = {
     {
       dates: 'March - June 2018:',
       description:
-        'I completed my work placement (FCT) for the Networked Computer Systems Administration degree at Soluciones Center SCA, where I learned to build websites with PrestaShop and WordPress. I also received a letter of recommendation and specialist certificates in both platforms.',
+        'I completed my work placement (FCT) for my Networked Computer Systems Administration qualification at Soluciones Center SCA, where I learned to build websites with PrestaShop and WordPress. I also received a letter of recommendation and specialist certificates in both platforms.',
     },
   ],
 };
@@ -126,12 +126,12 @@ export const ProjectsTexts: ProjectsText = {
     {
       title: 'Pepper Customers',
       description:
-        'Mobile and web application for Pepper customers. It allows them to manage their products, personal information, and documents, as well as access improved benefits.',
+        'Mobile and web app for Pepper customers. It enables customers to manage their products, details and documentation, as well as access enhanced features.',
       detailsTitle: 'Details',
       details: [
         'Built with React, Ionic, and TypeScript.',
         'Created in June 2025.',
-        'Optimized for mobile devices with Ionic. Available for both Android and iOS.',
+        'Optimised for mobile devices with Ionic. Available for both Android and iOS.',
         {
           before: 'Currently available at: ',
           linkText: 'Pepper Customers web',
@@ -151,12 +151,12 @@ export const ProjectsTexts: ProjectsText = {
     {
       title: 'Pepper Cross-Selling Landing',
       description:
-        'Responsive web application for Pepper customers. It allows access and contracting of new products such as personal loans or refinancing of other existing loans.',
+        'Responsive web application for Pepper customers. It enables customers to take out new products, such as personal loans, or refinance existing loans.',
       detailsTitle: 'Details',
       details: [
-        'Created with React, NextJS, and Typescript.',
+        'Created with React, NextJS, and TypeScript.',
         'Created in September 2023.',
-        'Optimized for mobile devices with a carefully crafted responsive design.',
+        'Optimised for mobile devices with a carefully crafted responsive design.',
         'Refactored and improved in 2026 to add refinancing options when an application for a new product is declined.',
         'Access requires a link sent by SMS. It contains a verified token that is valid only for the preselected customer.',
       ],
@@ -169,7 +169,7 @@ export const ProjectsTexts: ProjectsText = {
       details: [
         'Built with React, Ionic, and TypeScript.',
         'Created in July 2023.',
-        'Optimized for mobile devices with Ionic. Available for both Android and iOS.',
+        'Optimised for mobile devices with Ionic. Available for both Android and iOS.',
         {
           before: 'Currently available at: ',
           linkText: 'Pepper Merchants web',
@@ -189,13 +189,13 @@ export const ProjectsTexts: ProjectsText = {
     {
       title: 'Pepper Payment Landing',
       description:
-        'Fully responsive single-page web application for Pepper customers. It allows them to access and pay outstanding debt, make early payments, or check upcoming payments.',
+        'Fully responsive single-page web application for Pepper customers. It allows them to repay outstanding balances, make early payments, or check upcoming payments.',
       detailsTitle: 'Details',
       details: [
         'Built with React and TypeScript.',
         'Created in February 2023.',
-        'Optimized for mobile devices with a carefully crafted responsive design.',
-        'I extensively refactored it in 2025, adding new features and performance improvements.',
+        'Optimised for mobile devices with a carefully crafted responsive design.',
+        'I substantially refactored it in 2025, adding new features and performance improvements.',
         'Access requires a link sent by SMS or through the Pepper Customers app. The link contains a verified token that is valid only for a specific customer.',
       ],
     },
@@ -209,7 +209,12 @@ export const ProjectsTexts: ProjectsText = {
       details: [
         'Built with HTML, CSS, and JavaScript, with PHP handling contact form emails.',
         'Created on November 18, 2021.',
-        'Published at https://antonioweb.es until 2026.',
+        {
+          before: 'Published until 2026 at https://antonioweb.es, and now hosted on ',
+          linkText: 'Vercel',
+          linkHref: 'https://portfolio-web-lake-tau.vercel.app',
+          after: ' (View the old version on Vercel).',
+        },
         {
           before: 'GitHub: ',
           linkText: 'portfolio v1',
@@ -221,7 +226,7 @@ export const ProjectsTexts: ProjectsText = {
     {
       title: 'Blog Argaming',
       description:
-        'My final project for the Higher Vocational Degree in Web Application Development at IES Virgen del Carmen (Jaén), completed during the 2019/20 academic year.',
+        'My final project for the Higher Technician qualification in Web Application Development at IES Virgen del Carmen (Jaén), completed during the 2019/20 academic year.',
       detailsTitle: 'Details',
       details: [
         'Languages: HTML, CSS, JavaScript, and PHP. PHP framework: CodeIgniter 3.1.',
@@ -239,14 +244,14 @@ export const ProjectsTexts: ProjectsText = {
         src: ArgamingImg,
         width: 600,
         height: 300,
-        alt: 'Portada del blog ARGaming',
+        alt: 'ARGaming blog cover image',
         className: 'argamingImg',
       },
     },
     {
       title: 'HealthyCook App',
       description:
-        'UI/UX design for a healthy cooking mobile app. Created as part of the User Interface Development and User Experience coursework in the second year of the Multiplatform Application Development program.',
+        'UI/UX design for a healthy cooking mobile app. Created as part of the User Interface Development and User Experience coursework in the second year of the Multiplatform Application Development programme.',
       detailsTitle: 'Details',
       details: [
         'Software: designed in Figma.',
@@ -262,7 +267,7 @@ export const ProjectsTexts: ProjectsText = {
       media: {
         type: 'iframe',
         src: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124',
-        title: 'Vista previa del prototipo HealthyCook App en Figma',
+        title: 'Preview of the HealthyCook App prototype in Figma',
       },
     },
     {
@@ -318,7 +323,7 @@ export const EducationTexts: EducationText = {
     },
     {
       dates: '2012-2014:',
-      description: 'Science and Technology Baccalaureate, completed at IES Los Cerros in Úbeda.',
+      description: 'Baccalaureate in Science and Technology, completed at IES Los Cerros in Úbeda.',
     },
   ],
 };

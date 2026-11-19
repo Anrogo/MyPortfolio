@@ -195,7 +195,7 @@ export const ProjectsTexts: ProjectsText = {
         'Creado con React y Typescript.',
         'Fecha de creación: febrero 2023.',
         'Adaptado a móviles mediante un diseño responsive muy cuidado y optimizado.',
-        'Fue refactorizada, por mi, en profundidad en 2025 además de incorporar nuevas funcionalidades y mejoras de rendimiento.',
+        'Realicé su refactorización en profundidad en 2025 además de incorporar nuevas funcionalidades y mejoras de rendimiento.',
         'Para acceder es necesario un link que se envía en un sms, o bien desde la app de Clientes. Este enlace contiene un token verificado y válido solo para un cliente concreto.',
       ],
     },
@@ -210,10 +210,10 @@ export const ProjectsTexts: ProjectsText = {
         'Creado exclusivamente con HTML, CSS y JS. Y con PHP para el envío de correos de contacto.',
         'Fecha de creación: 18 de noviembre de 2021.',
         {
-          before: 'Publicado hasta 2026 en ',
-          linkText: 'https://antonioweb.es',
+          before: 'Publicado hasta 2026 en https://antonioweb.es, y ahora alojado en ',
+          linkText: 'Vercel',
           linkHref: 'https://portfolio-web-lake-tau.vercel.app',
-          after: '.',
+          after: ' (Haz click para ir a su nuevo enlace).',
         },
         {
           before: 'GitHub: ',
