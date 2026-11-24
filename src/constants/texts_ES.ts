@@ -31,6 +31,8 @@ export const ExperienceTexts: ExperienceText = {
   title: 'Experiencia profesional',
   jobs: [
     {
+      title: 'Desarrollador Frontend',
+      company: 'Pepper Financial Services Group',
       dates: 'Septiembre 2023 - actualidad:',
       linkDescription: {
         before: 'Llevo más de 3 años trabajando como desarrollador frontend en ',
@@ -49,6 +51,8 @@ export const ExperienceTexts: ExperienceText = {
       ],
     },
     {
+      title: 'Desarrollador de Backend',
+      company: 'Pepper Financial Services Group',
       dates: 'Junio 2022 - septiembre 2023:',
       linkDescription: {
         before: 'Previamente también trabajé como desarrollador de backend en ',
@@ -69,6 +73,8 @@ export const ExperienceTexts: ExperienceText = {
       ],
     },
     {
+      title: 'Técnico de Informática',
+      company: 'VMLY&R',
       dates: 'Marzo - junio 2022:',
       linkDescription: {
         before: 'Las prácticas, o FCT, del Grado Superior de DAM. Completada en la empresa ',
@@ -88,16 +94,22 @@ export const ExperienceTexts: ExperienceText = {
       ],
     },
     {
+      title: 'Técnico de Informática',
+      company: 'Ferretería Ubetense',
       dates: 'Febrero - marzo 2021:',
       description:
         'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo el inventario y revisión de equipos. También me he encargado de la resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
     },
     {
+      title: 'Prácticas FCT - DAW',
+      company: 'Soluciones Center SCA',
       dates: 'Abril - junio 2020:',
       description:
-        'Formación, mediante teletrabajo, con la empresa Soluciones Center SCA durante las prácticas (FCT) del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos y tareas renovadas.',
+        'Formación, mediante teletrabajo, durante las prácticas (FCT) del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos y tareas renovadas.',
     },
     {
+      title: 'Becario de sistemas informáticos',
+      company: 'Cetarsa SA',
       dates: 'Noviembre 2018 - octubre 2019:',
       description:
         'Trabajé como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. He aprendido muchísimo durante este año y algunas de las muchas tareas desarrolladas han sido:',
@@ -112,6 +124,8 @@ export const ExperienceTexts: ExperienceText = {
       ],
     },
     {
+      title: 'Prácticas FCT - ASIR',
+      company: 'Soluciones Center SCA',
       dates: 'Marzo - junio 2018: ',
       description:
         'Formación en centro de trabajo con Soluciones Center SCA (FCT) del CFGS ASIR. Realicé un aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Además, recibí una carta de recomendación de la empresa y dos certificados de especialista en PrestaShop y WordPress.',
