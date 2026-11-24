@@ -43,7 +43,7 @@ export const Title = styled.span<TextsProps>`
   }
 
   @media (max-width: 500px) {
-    font-size: ${theme.fontSize.xl};
+    font-size: ${theme.fontSize.xxl};
   }
 `;
 

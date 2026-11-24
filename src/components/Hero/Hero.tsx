@@ -26,7 +26,7 @@ const Hero = ({ texts, darkTheme }: HeroProps) => {
           <HeroTextSection id="hero-section-left">
             <Title>{texts.myName}</Title>
             <HeroSubtitle>{texts.myPosition}</HeroSubtitle>
-            <Description>{texts.myDescription}</Description>
+            {/* <Description>{texts.myDescription}</Description> */}
           </HeroTextSection>
           <HeroImgSection id="hero-section-right">
             <ProfileImage

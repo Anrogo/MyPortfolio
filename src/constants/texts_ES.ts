@@ -14,8 +14,8 @@ import type {
 } from '@/interfaces/Text';
 
 export const HomeTexts: HomeText = {
-  myName: 'Hola, soy Antonio Rodríguez González',
-  myPosition: 'Desarrollador Frontend',
+  myName: 'Antonio Rodríguez González',
+  myPosition: 'Desarrollador Frontend | React, Angular y TypeScript',
   myDescription: 'Apasionado por el mundo de la programación y las nuevas tecnologías',
   profileImageAlt: 'Foto de perfil de Antonio',
 };
@@ -23,7 +23,7 @@ export const HomeTexts: HomeText = {
 export const AboutMeTexts: AboutMeText = {
   title: 'Sobre mí',
   description:
-    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend. Anteriormente trabajé en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte.',
+    'Desarrollador frontend especializado en React, Angular y TypeScript, con experiencia en entornos financieros, backend y análisis de datos. Combino atención al detalle con visión end-to-end para construir soluciones fiables en equipos bajo metodología Scrum, desde la fase de desarrollo hasta su puesta en producción.',
   imageAlt: 'Persona usando un ordenador',
 };
 
@@ -35,62 +35,58 @@ export const ExperienceTexts: ExperienceText = {
       company: 'Pepper Financial Services Group',
       dates: 'Septiembre 2023 - actualidad:',
       linkDescription: {
-        before: 'Llevo más de 3 años trabajando como desarrollador frontend en ',
+        before: 'Trabajo como desarrollador frontend en ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
         after:
-          ', multinacional del sector financiero. Desarrollo aplicaciones web y móviles con tecnologías modernas como React, Angular, Next.js o Ionic. Funciones que realizo:',
+          ', en el sector financiero. Desarrollo aplicaciones web y móviles y colaboro en equipos ágiles durante todo el ciclo, desde la implementación hasta los despliegues en producción. Entre mis responsabilidades:',
       },
       detailsTitle: 'Detalles',
       details: [
-        'Implementación de interfaces de usuario para diferentes productos.',
-        'Optimización de funcionalidades y diseño para mejorar la experiencia de usuario (UX/UI).',
-        'Pruebas y validaciones para garantizar rendimiento y estabilidad.',
-        'Colaboración con equipos multidisciplinares en entornos ágiles.',
-        'Mantenimiento y evolución continua de las distintas aplicaciones.',
+        'Desarrollo de aplicaciones financieras con React, Angular, Next.js y TypeScript.',
+        'Diseño de interfaces responsive y componentes reutilizables a partir de diseños de Figma.',
+        'Desarrollo de arquitecturas modulares con Nx, Module Federation y Vite.',
+        'Gestión del estado con Redux, Context API y custom hooks.',
+        'Optimización del rendimiento en el cliente y mejora de la accesibilidad con WCAG y ARIA.',
+        'Integración de APIs REST y sincronización de datos en tiempo real mediante WebSockets.',
+        'Creación y mantenimiento de pruebas unitarias, de integración y E2E con Vitest, Jest, React Testing Library y Cypress.',
+        'Participación en pipelines y despliegues en Azure, y análisis del comportamiento de usuarios con Microsoft Clarity.',
       ],
     },
     {
-      title: 'Desarrollador de Backend',
+      title: 'Desarrollador Backend',
       company: 'Pepper Financial Services Group',
       dates: 'Junio 2022 - septiembre 2023:',
       linkDescription: {
-        before: 'Previamente también trabajé como desarrollador de backend en ',
+        before: 'Trabajé como desarrollador backend en ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
-        after: ' durante 1 año y 3 meses. Funciones que llevaba a cabo: ',
+        after: ' durante un año y tres meses, desarrollando lógica de negocio y dando soporte a aplicaciones internas. Entre mis responsabilidades:',
       },
       detailsTitle: 'Detalles',
       details: [
-        'Uso de SQL Server.',
-        'Programación con PL/SQL.',
-        'Resolución de incidencias de diversa tipología.',
-        'Creación, modificación y actualización de queries o procedimientos almacenados.',
-        'Pruebas de validaciones de los scripts.',
-        'Automatización de procesos.',
-        'Actualización y mejora de los aplicativos internos.',
-        'Integración de nuevos comercios y sus plugins en la plataforma de Ecommerce.',
+        'Programación de lógica de negocio en SQL Server mediante T-SQL.',
+        'Diseño y optimización de consultas complejas para manipular y extraer datos.',
+        'Automatización de procesos internos y pruebas de scripts.',
+        'Análisis y resolución de incidencias de backend, y mejora de aplicaciones internas.',
+        'Integración de plugins de financiación en plataformas de comercio electrónico.',
       ],
     },
     {
-      title: 'Técnico de Informática',
+      title: 'Analista de datos (becario)',
       company: 'VMLY&R',
       dates: 'Marzo - junio 2022:',
       linkDescription: {
-        before: 'Las prácticas, o FCT, del Grado Superior de DAM. Completada en la empresa ',
+        before: 'Realicé las prácticas del Grado Superior de DAM en ',
         linkText: 'VMLY&R',
         linkHref: 'https://www.vmlyr.com/es-es/spain',
-        after: ', del grupo WPP, situado en Ríos Rosas 26, Madrid.',
+        after: ', trabajando con Oracle, Microsoft Dynamics y procesos de datos.',
       },
       detailsTitle: 'Detalles',
       details: [
-        'Manejo y limpieza de ficheros.',
-        'Carga de datos a través de Microsoft Azure Storage Explorer y Hermes.',
-        'Consulta, extracción y procesamiento de datos en Oracle.',
-        'Creación y/o modificación de queries.',
-        'Análisis y automatización de procesos en Oracle.',
-        'Realización de consultas en Dynamics.',
-        'Análisis, diseño y automatización de procesos manuales.',
+        'Consulta, extracción y procesamiento de datos en Oracle y Microsoft Dynamics.',
+        'Automatización de tareas con Python para gestionar ficheros, consultas y procesos en Oracle (PL/SQL).',
+        'Limpieza y preparación de ficheros para su carga en bases de datos mediante Azure Storage Explorer.',
       ],
     },
     {

@@ -22,7 +22,7 @@ export const HeroInformation = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: ${theme.spacing.md};
 
   @media (max-width: 768px) {
@@ -66,4 +66,13 @@ export const ProfileImage = styled(NextImage)`
 
 export const HeroSubtitle = styled(Subtitle)`
   font-style: italic;
+  font-size: ${theme.fontSize.xl};
+
+  @media screen and (max-width: 768px) {
+    font-size: ${theme.fontSize.lg};
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: ${theme.fontSize.md};
+  }
 `;
