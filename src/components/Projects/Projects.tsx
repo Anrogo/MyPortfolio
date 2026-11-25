@@ -11,7 +11,7 @@ import {
   ProjectsTitle,
 } from './Projects.styled';
 import type { ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
-import { Description, Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
+import { Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 
 const renderProjectContent = (content: ProjectTextContent): ReactNode => {

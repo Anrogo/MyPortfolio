@@ -1,8 +1,8 @@
 import CalculatorImg from '@/assets/images/calculadora_python.webp';
+import NetJobHome from '@/assets/images/netjob-home.webp';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';
-import NetJobHome from '@/assets/images/netjob-home.webp';
 import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
 import YourEventsAppImg from '@/assets/images/your-events-app.webp';
 import type {

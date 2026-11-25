@@ -7,7 +7,7 @@ import {
   ExperienceTitle,
 } from './Experience.styled';
 import type { ExperienceText } from '@/interfaces/Text';
-import { Description, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
+import { Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 
 const Experience = ({ texts }: { texts: ExperienceText }) => {

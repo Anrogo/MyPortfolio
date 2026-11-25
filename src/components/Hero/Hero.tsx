@@ -11,7 +11,7 @@ import {
 } from './Hero.styled';
 import profileImage from '@/assets/images/perfil-web.webp';
 import type { HomeText } from '@/interfaces/Text';
-import { Description, Title } from '@/styles/GlobalStyle';
+import { Title } from '@/styles/GlobalStyle';
 
 interface HeroProps {
   texts: HomeText;
