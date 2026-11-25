@@ -1,8 +1,10 @@
-import CalculatorImg from '@/assets/images/calculadora_python.png';
+import CalculatorImg from '@/assets/images/calculadora_python.webp';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';
+import NetJobHome from '@/assets/images/netjob-home.webp';
 import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
+import YourEventsAppImg from '@/assets/images/your-events-app.webp';
 import type {
   AboutMeText,
   EducationText,
@@ -242,6 +244,38 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
+      title: 'NetJob',
+      description:
+        'Se trata de mi Proyecto final, en grupo, del Grado Superior de Desarrollo de Aplicaciones Multiplataforma en el CEV - Escuela Superior de Formación Audiovisual, Animación 3D y Nuevas Tecnologías.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: Java + TypeScript',
+        'Frameworks: Spring Boot (backend) + Angular (frontend)',
+        'Fecha de creación: febrero - mayo 2022.',
+        'Autores: Antonio Rodríguez González + José Carlos, Juanpe, Kevin, Jorge, Álex, Oleksandra, Santi y Leire.',
+        {
+          before: 'GitHub: ',
+          linkText: 'repositorio de NetJob',
+          linkHref: 'https://github.com/jose1182/Frontend-Web',
+          after: '.',
+        },
+        {
+          before: 'Puedes ver nuestra demo en youtube: ',
+          linkText: 'vídeo de NetJob',
+          linkHref: 'https://youtu.be/XimVF6XPrTE',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: NetJobHome,
+        width: 606,
+        height: 282,
+        alt: 'Portada de NetJob',
+        className: 'NetJobImg',
+      },
+    },
+    {
       title: 'Blog Argaming',
       description:
         'Se trata de mi proyecto final para el Grado Superior de Desarrollo de Aplicaciones Web en el Instituto Virgen del Carmen (Jaén), del curso 2019/20.',
@@ -286,6 +320,29 @@ export const ProjectsTexts: ProjectsText = {
         type: 'iframe',
         src: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124',
         title: 'Vista previa del prototipo HealthyCook App en Figma',
+      },
+    },
+    {
+      title: 'Tu app para eventos',
+      description: 'Aplicación basada en un diseño de agenda para eventos. Incluyo geolocalización del evento, su fecha y hora, y un título que lo define. Se trataba de un ejercicio de clase en el que pusimos en práctica diseño con varias pantallas, compartir datos entre éstas, e integración y uso de mapas.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: Java, XML.',
+        'IDE: AndroidStudio.',
+        'Fecha de creación: 4 de diciembre de 2020.',
+        {
+          before: 'Presentación de la app: ',
+          linkText: 'YourEvents',
+          linkHref: '#',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: YourEventsAppImg,
+        width: 240,
+        height: 426,
+        alt: 'App YourEvents',
       },
     },
     {

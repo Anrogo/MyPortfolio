@@ -9,7 +9,7 @@ import {
   HeroSubtitle,
   HeroInformation,
 } from './Hero.styled';
-import profileImage from '@/assets/images/perfil-web.jpg';
+import profileImage from '@/assets/images/perfil-web.webp';
 import type { HomeText } from '@/interfaces/Text';
 import { Description, Title } from '@/styles/GlobalStyle';
 

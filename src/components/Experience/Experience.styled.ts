@@ -19,6 +19,11 @@ export const ExperienceListDetail = styled.li`
   padding: 8px 0;
 `;
 
+export const ExperienceTitle = styled.span`
+  font-size: ${theme.fontSize.lg};
+  font-weight: ${theme.fontWeight.bold};
+`;
+
 export const ExperienceSubtitle = styled.span`
   font-size: ${theme.fontSize.sm};
   font-style: italic;
@@ -27,6 +32,7 @@ export const ExperienceSubtitle = styled.span`
 
 export const ExperienceParagraph = styled(Paragraph)`
   margin-top: 8px;
+  margin-left: 0px;
 `;
 
 export const ExperienceText = styled(Text)``;

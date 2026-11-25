@@ -4,6 +4,7 @@ import {
   ExperienceParagraph,
   ExperienceSection,
   ExperienceSubtitle,
+  ExperienceTitle,
 } from './Experience.styled';
 import type { ExperienceText } from '@/interfaces/Text';
 import { Description, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
@@ -16,7 +17,7 @@ const Experience = ({ texts }: { texts: ExperienceText }) => {
       <ExperienceList>
         {texts.jobs.map((job) => (
           <ExperienceListDetail key={job.dates}>
-            <Description>{job.title}:</Description>
+            <ExperienceTitle>{job.title}:</ExperienceTitle>
             <br />
             <ExperienceSubtitle>
               {job.company} ({job.dates})

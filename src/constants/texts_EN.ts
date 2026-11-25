@@ -1,4 +1,4 @@
-import CalculatorImg from '@/assets/images/calculadora_python.png';
+import CalculatorImg from '@/assets/images/calculadora_python.webp';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';

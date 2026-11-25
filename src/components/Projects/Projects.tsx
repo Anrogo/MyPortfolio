@@ -8,6 +8,7 @@ import {
   ProjectsLi,
   ProjectsList,
   ProjectsSection,
+  ProjectsTitle,
 } from './Projects.styled';
 import type { ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
 import { Description, Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
@@ -59,7 +60,7 @@ const Projects = ({ texts }: { texts: ProjectsText }) => {
       <ProjectsList>
         {texts.projects.map((project) => (
           <ProjectsLi key={project.title}>
-            <Description>{project.title}</Description>
+            <ProjectsTitle>{project.title}</ProjectsTitle>
             <ProjectsDetails>
               <Paragraph>{renderProjectContent(project.description)}</Paragraph>
               {Boolean(project.details?.length || project.media) && (
