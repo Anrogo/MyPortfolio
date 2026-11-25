@@ -9,9 +9,9 @@ import {
   HeroSubtitle,
   HeroInformation,
 } from './Hero.styled';
-import profileImage from '@/assets/images/perfil-web.jpg';
+import profileImage from '@/assets/images/perfil-web.webp';
 import type { HomeText } from '@/interfaces/Text';
-import { Description, Title } from '@/styles/GlobalStyle';
+import { Title } from '@/styles/GlobalStyle';
 
 interface HeroProps {
   texts: HomeText;
@@ -26,7 +26,7 @@ const Hero = ({ texts, darkTheme }: HeroProps) => {
           <HeroTextSection id="hero-section-left">
             <Title>{texts.myName}</Title>
             <HeroSubtitle>{texts.myPosition}</HeroSubtitle>
-            <Description>{texts.myDescription}</Description>
+            {/* <Description>{texts.myDescription}</Description> */}
           </HeroTextSection>
           <HeroImgSection id="hero-section-right">
             <ProfileImage

@@ -6,6 +6,8 @@ export interface ExperienceText {
 }
 
 export interface Job {
+  title: string;
+  company: string;
   dates: string;
   description?: string;
   linkDescription?: LinkDescription;
@@ -63,18 +65,18 @@ export type ProjectTextContent = string | LinkDescription;
 
 export type ProjectMedia =
   | {
-      type: 'image';
-      src: StaticImageData;
-      width: number;
-      height: number;
-      alt: string;
-      className?: string;
-    }
+    type: 'image';
+    src: StaticImageData;
+    width: number;
+    height: number;
+    alt: string;
+    className?: string;
+  }
   | {
-      type: 'iframe';
-      src: string;
-      title: string;
-    };
+    type: 'iframe';
+    src: string;
+    title: string;
+  };
 
 export interface Project {
   title: string;

@@ -5,5 +5,8 @@ export const SocialLinksContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  
+  @media (max-width: 768px) {
+     margin-top: 16px;
+  }
 `;

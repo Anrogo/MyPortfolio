@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
-import { Li, MainSection } from '@/styles/GlobalStyle';
+import { Description, Li, MainSection } from '@/styles/GlobalStyle';
+import { theme } from '@/styles/theme';
 
 export const ProjectsSection = styled(MainSection)``;
 
@@ -15,6 +16,11 @@ export const ProjectsFeaturesList = styled.ul`
 
 export const ProjectsLi = styled(Li)`
   padding: 8px 0px;
+`;
+
+export const ProjectsTitle = styled(Description)`
+  font-size: ${theme.fontSize.lg};
+  font-weight: ${theme.fontWeight.bold};
 `;
 
 export const IframeContainer = styled.div`

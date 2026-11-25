@@ -1,7 +1,10 @@
-import CalculatorImg from '@/assets/images/calculadora_python.png';
+import CalculatorImg from '@/assets/images/calculadora_python.webp';
+import NetJobHome from '@/assets/images/netjob-home.webp';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';
+import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
+import YourEventsAppImg from '@/assets/images/your-events-app.webp';
 import type {
   AboutMeText,
   EducationText,
@@ -13,16 +16,16 @@ import type {
 } from '@/interfaces/Text';
 
 export const HomeTexts: HomeText = {
-  myName: 'Hi, I am Antonio Rodríguez González',
-  myPosition: 'Frontend Developer',
-  myDescription: 'Passionate about the world of programming and new technologies',
+  myName: 'Antonio Rodríguez González',
+  myPosition: 'Frontend Developer | React, Angular and TypeScript',
+  myDescription: 'Passionate about programming and new technologies',
   profileImageAlt: "Antonio's profile photo",
 };
 
 export const AboutMeTexts: AboutMeText = {
   title: 'About me',
   description:
-    'I am a developer from Jaén with experience in both frontend and backend development, specialised in web and mobile applications. I am currently part of the frontend team. Previously, I worked on the backend at the same company, Pepper. I am detail-oriented, organised and independent, as well as collaborative and dynamic. It is also worth mentioning that I am passionate about technology and sport.',
+    'Frontend developer specialised in React, Angular and TypeScript, with experience in financial environments, backend development and data analysis. I combine attention to detail with an end-to-end mindset to build reliable solutions in Scrum teams, from the development phase through to production.',
   imageAlt: 'Person using a computer',
 };
 
@@ -30,75 +33,83 @@ export const ExperienceTexts: ExperienceText = {
   title: 'Professional Experience',
   jobs: [
     {
-      dates: 'September 2023 - Present:',
+      title: 'Frontend Developer',
+      company: 'Pepper Financial Services Group',
+      dates: 'September 2023 - Present',
       linkDescription: {
-        before: 'I have worked as a front-end developer for over three years at ',
+        before: 'I work as a frontend developer at ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
         after:
-          ', a multinational financial services company. I build web and mobile applications using modern technologies such as React, Angular, NextJS, and Ionic. My responsibilities include:',
+          ', in the financial sector. I develop web and mobile applications and collaborate with agile teams throughout the full cycle, from implementation to production deployments. My responsibilities include:',
       },
       detailsTitle: 'Responsibilities',
       details: [
-        'Building user interfaces for a range of products.',
-        'Improving functionality and design to enhance the user experience (UX/UI).',
-        'Testing and validating features to ensure performance and stability.',
-        'Collaborating with cross-functional teams in agile environments.',
-        'Maintaining and continuously improving applications.',
+        'Developing financial applications with React, Angular, Next.js and TypeScript.',
+        'Designing responsive interfaces and reusable components from Figma designs.',
+        'Developing modular architectures with Nx, Module Federation and Vite.',
+        'Managing state with Redux, Context API and custom hooks.',
+        'Optimising client-side performance and improving accessibility with WCAG and ARIA.',
+        'Integrating REST APIs and synchronising real-time data through WebSockets.',
+        'Creating and maintaining unit, integration and E2E tests with Vitest, Jest, React Testing Library and Cypress.',
+        'Participating in Azure pipelines and deployments, and analysing user behaviour with Microsoft Clarity.',
       ],
     },
     {
-      dates: 'June 2022 - September 2023:',
+      title: 'Backend Developer',
+      company: 'Pepper Financial Services Group',
+      dates: 'June 2022 - September 2023',
       linkDescription: {
         before: 'Previously, I worked as a back-end developer at ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
-        after: ' for one year and three months. My responsibilities included:',
+        after: ' for one year and three months, developing business logic and supporting internal applications. My responsibilities included:',
       },
       detailsTitle: 'Responsibilities',
       details: [
-        'Working with SQL Server.',
-        'Writing PL/SQL code.',
-        'Troubleshooting a range of issues.',
-        'Creating, modifying, and updating queries and stored procedures.',
-        'Testing and validating scripts.',
-        'Automating processes.',
-        'Updating and improving internal applications.',
-        'Integrating new merchants and their plugins into the e-commerce platform.',
+        'Programming business logic in SQL Server using T-SQL.',
+        'Designing and optimising complex queries to manipulate and extract data.',
+        'Automating internal processes and testing scripts.',
+        'Analysing and resolving backend incidents and improving internal applications.',
+        'Integrating financing plugins into e-commerce platforms.',
       ],
     },
     {
-      dates: 'March - June 2022:',
+      title: 'Data Analyst (Intern)',
+      company: 'VMLY&R',
+      dates: 'March - June 2022',
       linkDescription: {
         before:
-          'I completed my work placement (FCT) as part of my Higher Technician qualification in Multiplatform Application Development at ',
+          'I completed my Higher Technician internship in Multiplatform Application Development at ',
         linkText: 'VMLY&R',
         linkHref: 'https://www.vmlyr.com/es-es/spain',
-        after: ', part of WPP and based at 26 Ríos Rosas Street in Madrid.',
+        after: ', working with Oracle, Microsoft Dynamics and data processes.',
       },
       detailsTitle: 'Responsibilities',
       details: [
-        'Managing and cleaning files.',
-        'Loading data with Microsoft Azure Storage Explorer and Hermes.',
-        'Querying, extracting, and processing data in Oracle.',
-        'Creating and modifying queries.',
-        'Analysing and automating processes in Oracle.',
-        'Running queries in Dynamics.',
-        'Analysing, designing, and automating manual processes.',
+        'Querying, extracting and processing data in Oracle and Microsoft Dynamics.',
+        'Automating tasks with Python to manage files, queries and processes in Oracle (PL/SQL).',
+        'Cleaning and preparing files for database imports using Azure Storage Explorer.',
       ],
     },
     {
-      dates: 'February - March 2021:',
+      title: 'IT Technician',
+      company: 'Ferretería Ubetense',
+      dates: 'February - March 2021',
       description:
         'I worked as an IT technician for a company in my hometown of Úbeda. My work included carrying out equipment inventories and inspections, as well as troubleshooting software and hardware problems, printer faults, and network connectivity issues.',
     },
     {
-      dates: 'April - June 2020:',
+      title: 'Internship - Web App Development',
+      company: 'Soluciones Center SCA',
+      dates: 'April - June 2020',
       description:
-        'I completed my Web Application Development work placement (FCT) remotely with Soluciones Center SCA. My tasks involved web development, hosting, troubleshooting, and expanding my knowledge of WordPress and PrestaShop through courses and new assignments.',
+        'I completed my Web Application Development internship remotely with Soluciones Center SCA. My tasks involved web development, hosting, troubleshooting, and expanding my knowledge of WordPress and PrestaShop through courses and new assignments.',
     },
     {
-      dates: 'November 2018 - October 2019:',
+      title: 'IT Systems Intern',
+      company: 'Cetarsa SA',
+      dates: 'November 2018 - October 2019',
       description:
         'I worked as an intern with the SEPI Foundation as part of the “Introduction to Business” programme from 1 November 2018 to 31 October 2019. I learned a great deal during that year. My responsibilities included:',
       detailsTitle: 'Responsibilities',
@@ -112,9 +123,11 @@ export const ExperienceTexts: ExperienceText = {
       ],
     },
     {
-      dates: 'March - June 2018:',
+      title: 'Internship - Networked Systems Administration',
+      company: 'Soluciones Center SCA',
+      dates: 'March - June 2018',
       description:
-        'I completed my work placement (FCT) for my Networked Computer Systems Administration qualification at Soluciones Center SCA, where I learned to build websites with PrestaShop and WordPress. I also received a letter of recommendation and specialist certificates in both platforms.',
+        'I completed my internship for my Networked Computer Systems Administration qualification at Soluciones Center SCA, where I learned to build websites with PrestaShop and WordPress. I also received a letter of recommendation and specialist certificates in both platforms.',
     },
   ],
 };
@@ -213,15 +226,55 @@ export const ProjectsTexts: ProjectsText = {
           before: 'Published until 2026 at https://antonioweb.es, and now hosted on ',
           linkText: 'Vercel',
           linkHref: 'https://portfolio-web-lake-tau.vercel.app',
-          after: ' (View the old version on Vercel).',
+          after: ' (Click to visit the new link).',
         },
         {
           before: 'GitHub: ',
           linkText: 'portfolio v1',
           linkHref: 'https://github.com/Anrogo/Web-Portfolio',
-          after: '',
+          after: '.',
         },
       ],
+      media: {
+        type: 'image',
+        src: OldPortfolioImg,
+        width: 600,
+        height: 300,
+        alt: 'Cover image of Antonio’s previous portfolio website',
+        className: 'portfolioImg',
+      },
+    },
+    {
+      title: 'NetJob',
+      description:
+        'This was my team final project for the Higher Technician qualification in Multiplatform Application Development at CEV - Higher School of Audiovisual Communication, 3D Animation and New Technologies.',
+      detailsTitle: 'Details',
+      details: [
+        'Languages: Java and TypeScript.',
+        'Frameworks: Spring Boot (backend) and Angular (frontend).',
+        'Created between February and May 2022.',
+        'Authors: Antonio Rodríguez González, José Carlos, Juanpe, Kevin, Jorge, Álex, Oleksandra, Santi and Leire.',
+        {
+          before: 'GitHub: ',
+          linkText: 'NetJob repository',
+          linkHref: 'https://github.com/jose1182/Frontend-Web',
+          after: '.',
+        },
+        {
+          before: 'Watch our demo on YouTube: ',
+          linkText: 'NetJob video',
+          linkHref: 'https://youtu.be/XimVF6XPrTE',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: NetJobHome,
+        width: 606,
+        height: 282,
+        alt: 'NetJob cover image',
+        className: 'NetJobImg',
+      },
     },
     {
       title: 'Blog Argaming',
@@ -268,6 +321,30 @@ export const ProjectsTexts: ProjectsText = {
         type: 'iframe',
         src: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124',
         title: 'Preview of the HealthyCook App prototype in Figma',
+      },
+    },
+    {
+      title: 'Your Events App',
+      description:
+        'An application based on an event agenda design. It includes the event location, date and time, and a defining title. It was a class exercise where we practised designing multiple screens, sharing data between them, and integrating and using maps.',
+      detailsTitle: 'Details',
+      details: [
+        'Languages: Java and XML.',
+        'IDE: Android Studio.',
+        'Created on December 4, 2020.',
+        {
+          before: 'App presentation: ',
+          linkText: 'YourEvents',
+          linkHref: '#',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: YourEventsAppImg,
+        width: 240,
+        height: 426,
+        alt: 'YourEvents app',
       },
     },
     {

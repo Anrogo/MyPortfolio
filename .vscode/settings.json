@@ -2,7 +2,10 @@
   "workbench.colorTheme": "Dark Modern",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "problems.decorations.enabled": true,
   "files.autoSave": "onFocusChange",
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"

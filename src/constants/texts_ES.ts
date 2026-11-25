@@ -1,8 +1,10 @@
-import CalculatorImg from '@/assets/images/calculadora_python.png';
+import CalculatorImg from '@/assets/images/calculadora_python.webp';
+import NetJobHome from '@/assets/images/netjob-home.webp';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';
 import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
+import YourEventsAppImg from '@/assets/images/your-events-app.webp';
 import type {
   AboutMeText,
   EducationText,
@@ -14,8 +16,8 @@ import type {
 } from '@/interfaces/Text';
 
 export const HomeTexts: HomeText = {
-  myName: 'Hola, soy Antonio Rodríguez González',
-  myPosition: 'Desarrollador Frontend',
+  myName: 'Antonio Rodríguez González',
+  myPosition: 'Desarrollador Frontend | React, Angular y TypeScript',
   myDescription: 'Apasionado por el mundo de la programación y las nuevas tecnologías',
   profileImageAlt: 'Foto de perfil de Antonio',
 };
@@ -23,7 +25,7 @@ export const HomeTexts: HomeText = {
 export const AboutMeTexts: AboutMeText = {
   title: 'Sobre mí',
   description:
-    'Soy un programador jienense con experiencia en desarrollo frontend y backend, especializado en aplicaciones web y móviles. Actualmente formo parte del equipo de frontend. Anteriormente trabajé en backend en la misma empresa, Pepper. Me caracterizo por ser detallista, organizado e independiente, además de colaborativo y dinámico. Cabe añadir que soy una persona apasionada por la tecnología y también por el deporte.',
+    'Desarrollador frontend especializado en React, Angular y TypeScript, con experiencia en entornos financieros, backend y análisis de datos. Combino atención al detalle con visión end-to-end para construir soluciones fiables en equipos bajo metodología Scrum, desde la fase de desarrollo hasta su puesta en producción.',
   imageAlt: 'Persona usando un ordenador',
 };
 
@@ -31,74 +33,82 @@ export const ExperienceTexts: ExperienceText = {
   title: 'Experiencia profesional',
   jobs: [
     {
-      dates: 'Septiembre 2023 - actualidad:',
+      title: 'Desarrollador Frontend',
+      company: 'Pepper Financial Services Group',
+      dates: 'Septiembre 2023 - actualidad',
       linkDescription: {
-        before: 'Llevo más de 3 años trabajando como desarrollador frontend en ',
+        before: 'Trabajo como desarrollador frontend en ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
         after:
-          ', multinacional del sector financiero. Desarrollo aplicaciones web y móviles con tecnologías modernas como React, Angular, Next.js o Ionic. Funciones que realizo:',
+          ', en el sector financiero. Desarrollo aplicaciones web y móviles y colaboro en equipos ágiles durante todo el ciclo, desde la implementación hasta los despliegues en producción. Entre mis responsabilidades:',
       },
       detailsTitle: 'Detalles',
       details: [
-        'Implementación de interfaces de usuario para diferentes productos.',
-        'Optimización de funcionalidades y diseño para mejorar la experiencia de usuario (UX/UI).',
-        'Pruebas y validaciones para garantizar rendimiento y estabilidad.',
-        'Colaboración con equipos multidisciplinares en entornos ágiles.',
-        'Mantenimiento y evolución continua de las distintas aplicaciones.',
+        'Desarrollo de aplicaciones financieras con React, Angular, Next.js y TypeScript.',
+        'Diseño de interfaces responsive y componentes reutilizables a partir de diseños de Figma.',
+        'Desarrollo de arquitecturas modulares con Nx, Module Federation y Vite.',
+        'Gestión del estado con Redux, Context API y custom hooks.',
+        'Optimización del rendimiento en el cliente y mejora de la accesibilidad con WCAG y ARIA.',
+        'Integración de APIs REST y sincronización de datos en tiempo real mediante WebSockets.',
+        'Creación y mantenimiento de pruebas unitarias, de integración y E2E con Vitest, Jest, React Testing Library y Cypress.',
+        'Participación en pipelines y despliegues en Azure, y análisis del comportamiento de usuarios con Microsoft Clarity.',
       ],
     },
     {
-      dates: 'Junio 2022 - septiembre 2023:',
+      title: 'Desarrollador Backend',
+      company: 'Pepper Financial Services Group',
+      dates: 'Junio 2022 - septiembre 2023',
       linkDescription: {
-        before: 'Previamente también trabajé como desarrollador de backend en ',
+        before: 'Trabajé como desarrollador backend en ',
         linkText: 'Pepper Financial Services Group',
         linkHref: 'https://pepperfinance.es',
-        after: ' durante 1 año y 3 meses. Funciones que llevaba a cabo: ',
+        after: ' durante un año y tres meses, desarrollando lógica de negocio y dando soporte a aplicaciones internas. Entre mis responsabilidades:',
       },
       detailsTitle: 'Detalles',
       details: [
-        'Uso de SQL Server.',
-        'Programación con PL/SQL.',
-        'Resolución de incidencias de diversa tipología.',
-        'Creación, modificación y actualización de queries o procedimientos almacenados.',
-        'Pruebas de validaciones de los scripts.',
-        'Automatización de procesos.',
-        'Actualización y mejora de los aplicativos internos.',
-        'Integración de nuevos comercios y sus plugins en la plataforma de Ecommerce.',
+        'Programación de lógica de negocio en SQL Server mediante T-SQL.',
+        'Diseño y optimización de consultas complejas para manipular y extraer datos.',
+        'Automatización de procesos internos y pruebas de scripts.',
+        'Análisis y resolución de incidencias de backend, y mejora de aplicaciones internas.',
+        'Integración de plugins de financiación en plataformas de comercio electrónico.',
       ],
     },
     {
-      dates: 'Marzo - junio 2022:',
+      title: 'Analista de datos (becario)',
+      company: 'VMLY&R',
+      dates: 'Marzo - junio 2022',
       linkDescription: {
-        before: 'Las prácticas, o FCT, del Grado Superior de DAM. Completada en la empresa ',
+        before: 'Realicé las prácticas del Grado Superior de DAM en ',
         linkText: 'VMLY&R',
         linkHref: 'https://www.vmlyr.com/es-es/spain',
-        after: ', del grupo WPP, situado en Ríos Rosas 26, Madrid.',
+        after: ', trabajando con Oracle, Microsoft Dynamics y procesos de datos.',
       },
       detailsTitle: 'Detalles',
       details: [
-        'Manejo y limpieza de ficheros.',
-        'Carga de datos a través de Microsoft Azure Storage Explorer y Hermes.',
-        'Consulta, extracción y procesamiento de datos en Oracle.',
-        'Creación y/o modificación de queries.',
-        'Análisis y automatización de procesos en Oracle.',
-        'Realización de consultas en Dynamics.',
-        'Análisis, diseño y automatización de procesos manuales.',
+        'Consulta, extracción y procesamiento de datos en Oracle y Microsoft Dynamics.',
+        'Automatización de tareas con Python para gestionar ficheros, consultas y procesos en Oracle (PL/SQL).',
+        'Limpieza y preparación de ficheros para su carga en bases de datos mediante Azure Storage Explorer.',
       ],
     },
     {
-      dates: 'Febrero - marzo 2021:',
+      title: 'Técnico de Informática',
+      company: 'Ferretería Ubetense',
+      dates: 'Febrero - marzo 2021',
       description:
         'He trabajado como técnico de informática en una empresa de mi localidad, Úbeda. En este puesto he llevado a cabo el inventario y revisión de equipos. También me he encargado de la resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones de red entre otros.',
     },
     {
-      dates: 'Abril - junio 2020:',
+      title: 'Prácticas FCT - DAW',
+      company: 'Soluciones Center SCA',
+      dates: 'Abril - junio 2020',
       description:
-        'Formación, mediante teletrabajo, con la empresa Soluciones Center SCA durante las prácticas (FCT) del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos y tareas renovadas.',
+        'Formación, mediante teletrabajo, durante las prácticas (FCT) del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos y tareas renovadas.',
     },
     {
-      dates: 'Noviembre 2018 - octubre 2019:',
+      title: 'Becario de sistemas informáticos',
+      company: 'Cetarsa SA',
+      dates: 'Noviembre 2018 - octubre 2019',
       description:
         'Trabajé como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. He aprendido muchísimo durante este año y algunas de las muchas tareas desarrolladas han sido:',
       detailsTitle: 'Detalles',
@@ -112,7 +122,9 @@ export const ExperienceTexts: ExperienceText = {
       ],
     },
     {
-      dates: 'Marzo - junio 2018: ',
+      title: 'Prácticas FCT - ASIR',
+      company: 'Soluciones Center SCA',
+      dates: 'Marzo - junio 2018',
       description:
         'Formación en centro de trabajo con Soluciones Center SCA (FCT) del CFGS ASIR. Realicé un aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Además, recibí una carta de recomendación de la empresa y dos certificados de especialista en PrestaShop y WordPress.',
     },
@@ -232,6 +244,38 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
+      title: 'NetJob',
+      description:
+        'Se trata de mi Proyecto final, en grupo, del Grado Superior de Desarrollo de Aplicaciones Multiplataforma en el CEV - Escuela Superior de Formación Audiovisual, Animación 3D y Nuevas Tecnologías.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: Java + TypeScript',
+        'Frameworks: Spring Boot (backend) + Angular (frontend)',
+        'Fecha de creación: febrero - mayo 2022.',
+        'Autores: Antonio Rodríguez González + José Carlos, Juanpe, Kevin, Jorge, Álex, Oleksandra, Santi y Leire.',
+        {
+          before: 'GitHub: ',
+          linkText: 'repositorio de NetJob',
+          linkHref: 'https://github.com/jose1182/Frontend-Web',
+          after: '.',
+        },
+        {
+          before: 'Puedes ver nuestra demo en youtube: ',
+          linkText: 'vídeo de NetJob',
+          linkHref: 'https://youtu.be/XimVF6XPrTE',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: NetJobHome,
+        width: 606,
+        height: 282,
+        alt: 'Portada de NetJob',
+        className: 'NetJobImg',
+      },
+    },
+    {
       title: 'Blog Argaming',
       description:
         'Se trata de mi proyecto final para el Grado Superior de Desarrollo de Aplicaciones Web en el Instituto Virgen del Carmen (Jaén), del curso 2019/20.',
@@ -276,6 +320,29 @@ export const ProjectsTexts: ProjectsText = {
         type: 'iframe',
         src: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEUhjwcPGLIoAh10vOgVlHZ%2FMockups-Healthycook-App%3Fnode-id%3D34%253A124%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D34%253A124',
         title: 'Vista previa del prototipo HealthyCook App en Figma',
+      },
+    },
+    {
+      title: 'Tu app para eventos',
+      description: 'Aplicación basada en un diseño de agenda para eventos. Incluyo geolocalización del evento, su fecha y hora, y un título que lo define. Se trataba de un ejercicio de clase en el que pusimos en práctica diseño con varias pantallas, compartir datos entre éstas, e integración y uso de mapas.',
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: Java, XML.',
+        'IDE: AndroidStudio.',
+        'Fecha de creación: 4 de diciembre de 2020.',
+        {
+          before: 'Presentación de la app: ',
+          linkText: 'YourEvents',
+          linkHref: '#',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: YourEventsAppImg,
+        width: 240,
+        height: 426,
+        alt: 'App YourEvents',
       },
     },
     {
