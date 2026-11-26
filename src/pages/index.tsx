@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import AboutMe from '@/components/AboutMe/AboutMe';
 import ArrowUp from '@/components/ArrowUp/ArrowUp';
 import Copyright from '@/components/Copyright/Copyright';
+import Courses from '@/components/Courses/Courses';
 import Education from '@/components/Education/Education';
 import Experience from '@/components/Experience/Experience';
 import Hero from '@/components/Hero/Hero';
@@ -59,6 +60,7 @@ const Home = () => {
           <Experience texts={texts.ExperienceTexts} />
           <Projects texts={texts.ProjectsTexts} />
           <Education texts={texts.EducationTexts} />
+          <Courses texts={texts.CoursesTexts} />
           <Copyright />
           <ArrowUp label={texts.UiTexts.backToTop} />
         </Container>
