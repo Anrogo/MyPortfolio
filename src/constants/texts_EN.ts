@@ -7,6 +7,7 @@ import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
 import YourEventsAppImg from '@/assets/images/your-events-app.webp';
 import type {
   AboutMeText,
+  CourseText,
   EducationText,
   ExperienceText,
   HomeText,
@@ -403,6 +404,60 @@ export const EducationTexts: EducationText = {
       description: 'Baccalaureate in Science and Technology, completed at IES Los Cerros in Úbeda.',
     },
   ],
+};
+
+export const CoursesTexts: CourseText = {
+  title: 'Advanced training – courses',
+  courses: [
+    {
+      date: '2022',
+      description: 'Spring University 2021 - Spring Framework and Spring Boot (74 h)'
+    },
+    {
+      date: '2022',
+      description: 'Python University 2021 - POO, Tkinter, Django, Flask and more (47 h)'
+    },
+    {
+      date: '2020',
+      description: 'Master’s in Full-Stack Web Development: Angular, Node, Laravel, Symfony (34 hours)'
+    },
+    {
+      date: '2020',
+      description: 'Bootstrap course (4 h)'
+    },
+    {
+      date: '2020',
+      description: 'Bootstrap 4 course: responsive design and layout (12 h)'
+    },
+    {
+      date: '2020',
+      description: 'CodeIgniter 3 course (for the final project of DAW - 10 h)'
+    },
+    {
+      date: '2020',
+      description: 'Professional JavaScript course (30 h)'
+    },
+    {
+      date: '2019',
+      description: 'HTML5 and CSS3 course (10 h)'
+    },
+    {
+      date: '2018',
+      description: 'CCNA Switching & Routing: Basic principles of routing and switching.'
+    },
+    {
+      date: '2018',
+      description: 'Cisco Networking Academy Cybersecurity Essentials.'
+    },
+    {
+      date: '2018',
+      description: 'Cisco Networking Academy Introduction to Cybersecurity.'
+    },
+    {
+      date: '2017',
+      description: 'CCNA Switching & Routing: Introduction to networking.'
+    },
+  ]
 };
 
 export const NavBarLinkTexts: NavBarLinkText = {

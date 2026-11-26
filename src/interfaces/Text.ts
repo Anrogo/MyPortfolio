@@ -99,8 +99,19 @@ export interface PortfolioTexts {
   ExperienceTexts: ExperienceText;
   ProjectsTexts: ProjectsText;
   EducationTexts: EducationText;
+  CoursesTexts: CourseText;
   NavBarLinkTexts: NavBarLinkText;
   UiTexts: UiText;
 }
 
 export type Language = 'es' | 'en';
+
+export interface CourseText {
+  title: string;
+  courses: Course[];
+}
+
+export interface Course {
+  date: string;
+  description: string;
+}

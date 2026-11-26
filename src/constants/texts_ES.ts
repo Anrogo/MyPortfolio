@@ -7,6 +7,7 @@ import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
 import YourEventsAppImg from '@/assets/images/your-events-app.webp';
 import type {
   AboutMeText,
+  CourseText,
   EducationText,
   ExperienceText,
   HomeText,
@@ -401,6 +402,60 @@ export const EducationTexts: EducationText = {
       description: 'Bachillerato científico-tecnológico. En el instituto IES Los Cerros, Úbeda',
     },
   ],
+};
+
+export const CoursesTexts: CourseText = {
+  title: 'Formación complementaria - cursos',
+  courses: [
+    {
+      date: '2022',
+      description: 'Universidad Spring 2021 - Spring Framework y Spring Boot (74 h)'
+    },
+    {
+      date: '2022',
+      description: 'Universidad Python 2021 - POO, Tkinter, Django, Flask y más (47 h)'
+    },
+    {
+      date: '2020',
+      description: 'Master en webs Full Stack: Angular, Node, Laravel, Symfony (34 h)'
+    },
+    {
+      date: '2020',
+      description: 'Curso de Bootstrap (4 h)'
+    },
+    {
+      date: '2020',
+      description: 'Curso de Bootstrap 4: Maquetación responsive y layout (12 h)'
+    },
+    {
+      date: '2020',
+      description: 'Curso de CodeIgniter 3 (para el proyecto de fin de ciclo - 10 h)'
+    },
+    {
+      date: '2020',
+      description: 'Curso de Javascript Profesional (30 h)'
+    },
+    {
+      date: '2019',
+      description: 'Curso de HTML5 y CSS3 (10 h)'
+    },
+    {
+      date: '2018',
+      description: 'CCNA Switching & Routing: Principios básicos de routing y switching.'
+    },
+    {
+      date: '2018',
+      description: 'Cisco Networking Academy Cybersecurity Essentials.'
+    },
+    {
+      date: '2018',
+      description: 'Cisco Networking Academy Introduction to Cybersecurity.'
+    },
+    {
+      date: '2017',
+      description: 'CCNA Switching & Routing: Introducción a redes.'
+    },
+  ]
 };
 
 export const NavBarLinkTexts: NavBarLinkText = {
