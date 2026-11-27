@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import {
   IframeContainer,
   ImgContainer,
+  ProjectContainer,
   ProjectsDetails,
   ProjectsFeaturesList,
   ProjectsLi,
@@ -10,9 +11,11 @@ import {
   ProjectsSection,
   ProjectsTitle,
 } from './Projects.styled';
-import type { ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
-import { Details, Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
+import type { Project, ProjectMedia, ProjectTextContent, ProjectsText } from '@/interfaces/Text';
+import { Details, Li, Link, Paragraph, SectionSubtitle, Summary } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
+import { Modal } from '../Modal/Modal';
+import { ProjectsTexts } from '@/constants/texts_EN';
 
 const renderProjectContent = (content: ProjectTextContent): ReactNode => {
   if (typeof content === 'string') {
@@ -54,33 +57,54 @@ const renderProjectMedia = (media: ProjectMedia) => {
 };
 
 const Projects = ({ texts }: { texts: ProjectsText }) => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
     <ProjectsSection id="projects">
-      <Subtitle fontWeight={theme.fontWeight.light}>{texts.title}</Subtitle>
-      <ProjectsList>
-        {texts.projects.map((project) => (
-          <ProjectsLi key={project.title}>
-            <ProjectsTitle>{project.title}</ProjectsTitle>
+      <SectionSubtitle fontWeight={theme.fontWeight.light}>{texts.title}</SectionSubtitle>
+      <Modal
+        isOpen={selectedProject !== null}
+        onClose={() => setSelectedProject(null)}
+        title={selectedProject?.title ?? ProjectsTexts.detailsLabel}
+      >
+        {selectedProject && (
+          <>
             <ProjectsDetails>
-              <Paragraph>{renderProjectContent(project.description)}</Paragraph>
-              {Boolean(project.details?.length || project.media) && (
+              <Paragraph>{renderProjectContent(selectedProject.description)}</Paragraph>
+              {Boolean(selectedProject.details?.length || selectedProject.media) && (
                 <Details>
-                  <Summary>{project.detailsTitle ?? texts.detailsLabel}</Summary>
-                  {project.detailsDescription && (
-                    <Paragraph>{project.detailsDescription}</Paragraph>
+                  <Summary>{selectedProject.detailsTitle ?? texts.detailsLabel}</Summary>
+                  {selectedProject.detailsDescription && (
+                    <Paragraph>{selectedProject.detailsDescription}</Paragraph>
                   )}
-                  {project.details && project.details.length > 0 && (
+                  {selectedProject.details && selectedProject.details.length > 0 && (
                     <ProjectsFeaturesList>
-                      {project.details.map((detail, index) => (
-                        <Li key={`${project.title}-${index}`}>- {renderProjectContent(detail)}</Li>
+                      {selectedProject.details.map((detail, index) => (
+                        <Li key={`${selectedProject.title}-${index}`}>
+                          - {renderProjectContent(detail)}
+                        </Li>
                       ))}
                     </ProjectsFeaturesList>
                   )}
-                  {project.media && renderProjectMedia(project.media)}
                 </Details>
               )}
             </ProjectsDetails>
-          </ProjectsLi>
+          </>
+        )}
+      </Modal>
+      <ProjectsList>
+        {texts.projects.map((project) => (
+          <ProjectContainer
+            key={project.title}
+            as="button"
+            type="button"
+            onClick={() => setSelectedProject(project)}
+          >
+            <ProjectsLi>
+              <ProjectsTitle>{project.title}</ProjectsTitle>
+              {project.media && renderProjectMedia(project.media)}
+            </ProjectsLi>
+          </ProjectContainer>
         ))}
       </ProjectsList>
     </ProjectsSection>

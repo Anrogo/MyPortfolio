@@ -1,5 +1,7 @@
 import CalculatorImg from '@/assets/images/calculadora_python.webp';
 import NetJobHome from '@/assets/images/netjob-home.webp';
+import PepperImg1 from '@/assets/images/pepper-1.jpg';
+import PepperImg2 from '@/assets/images/pepper-2.jpg';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';
@@ -174,6 +176,14 @@ export const ProjectsTexts: ProjectsText = {
         'Refactored and improved in 2026 to add refinancing options when an application for a new product is declined.',
         'Access requires a link sent by SMS. It contains a verified token that is valid only for the preselected customer.',
       ],
+      media: {
+        type: 'image',
+        src: PepperImg2,
+        width: 640,
+        height: 360,
+        alt: 'Screenshot of Pepper Cross-Selling Landing',
+        className: 'pepperComerciosImg',
+      },
     },
     {
       title: 'Pepper Merchants',
@@ -212,6 +222,14 @@ export const ProjectsTexts: ProjectsText = {
         'I substantially refactored it in 2025, adding new features and performance improvements.',
         'Access requires a link sent by SMS or through the Pepper Customers app. The link contains a verified token that is valid only for a specific customer.',
       ],
+      media: {
+        type: 'image',
+        src: PepperImg1,
+        width: 640,
+        height: 360,
+        alt: 'Screenshot of Pepper Payment Landing',
+        className: 'pepperComerciosImg',
+      },
     },
     {
       title: 'My Previous Portfolio',
@@ -303,6 +321,36 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
+      title: 'My Own Calculator',
+      description: {
+        before:
+          'A basic calculator built with Python and its Tkinter GUI library. I created it while taking this Udemy course: ',
+        linkText: 'Python University 2021 - POO, Tkinter, Django, Flask and more',
+        linkHref:
+          'https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/',
+        after: ' (47 h).',
+      },
+      detailsTitle: 'Details',
+      details: [
+        'Language: Python.',
+        'IDE: PyCharm.',
+        'Created on January 15, 2022.',
+        {
+          before: 'GitHub: ',
+          linkText: 'calculator',
+          linkHref: 'https://github.com/Anrogo/Python-Curse/tree/master/Tkinter/Calculadora',
+          after: '',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: CalculatorImg,
+        width: 300,
+        height: 300,
+        alt: 'Calculator built with Python and Tkinter',
+      },
+    },
+    {
       title: 'HealthyCook App',
       description:
         'UI/UX design for a healthy cooking mobile app. Created as part of the User Interface Development and User Experience coursework in the second year of the Multiplatform Application Development programme.',
@@ -346,36 +394,6 @@ export const ProjectsTexts: ProjectsText = {
         width: 240,
         height: 426,
         alt: 'YourEvents app',
-      },
-    },
-    {
-      title: 'My Calculator',
-      description: {
-        before:
-          'A basic calculator built with Python and its Tkinter GUI library. I created it while taking this Udemy course: ',
-        linkText: 'Universidad Python 2021 - POO, Tkinter, Django, Flask y más',
-        linkHref:
-          'https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/',
-        after: ' (47 h).',
-      },
-      detailsTitle: 'Details',
-      details: [
-        'Language: Python.',
-        'IDE: PyCharm.',
-        'Created on January 15, 2022.',
-        {
-          before: 'GitHub: ',
-          linkText: 'calculator',
-          linkHref: 'https://github.com/Anrogo/Python-Curse/tree/master/Tkinter/Calculadora',
-          after: '',
-        },
-      ],
-      media: {
-        type: 'image',
-        src: CalculatorImg,
-        width: 300,
-        height: 300,
-        alt: 'Calculator built with Python and Tkinter',
       },
     },
   ],

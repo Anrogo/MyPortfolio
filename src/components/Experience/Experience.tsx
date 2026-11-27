@@ -7,13 +7,13 @@ import {
   ExperienceTitle,
 } from './Experience.styled';
 import type { ExperienceText } from '@/interfaces/Text';
-import { Li, Link, Paragraph, Subtitle, Summary } from '@/styles/GlobalStyle';
+import { Li, Link, Paragraph, SectionSubtitle, Summary } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 
 const Experience = ({ texts }: { texts: ExperienceText }) => {
   return (
     <ExperienceSection id="experience">
-      <Subtitle fontWeight={theme.fontWeight.light}>{texts.title}</Subtitle>
+      <SectionSubtitle fontWeight={theme.fontWeight.light}>{texts.title}</SectionSubtitle>
       <ExperienceList>
         {texts.jobs.map((job) => (
           <ExperienceListDetail key={job.dates}>

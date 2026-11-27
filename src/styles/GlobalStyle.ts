@@ -131,6 +131,12 @@ export const MainSection = styled.section`
   }
 `;
 
+export const SectionSubtitle = styled(Subtitle)`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const Li = styled.li`
   @media (max-width: 500px) {
     font-size: ${theme.fontSize.xs};

@@ -9,6 +9,7 @@ export const colors = {
   downloadBlue: '#346af8',
 
   /* Verdes */
+  green0: '#DCE8E0',
   green1: '#94b8a3',
   green2: '#8CFF74',
 
@@ -20,5 +21,6 @@ export const colors = {
   whiteF: '#F5F5F5',
   white: '#E2E8F0',
   gray: '#C5C6BC',
+  darkGray: '#3A445D',
   black: '#000',
 };

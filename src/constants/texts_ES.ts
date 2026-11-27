@@ -2,6 +2,8 @@ import CalculatorImg from '@/assets/images/calculadora_python.webp';
 import NetJobHome from '@/assets/images/netjob-home.webp';
 import PepperClientesImg from '@/assets/images/pepper-clientes-web.webp';
 import PepperComerciosImg from '@/assets/images/pepper-comercios-web.webp';
+import PepperImg1 from '@/assets/images/pepper-1.jpg';
+import PepperImg2 from '@/assets/images/pepper-2.jpg';
 import ArgamingImg from '@/assets/images/portada_argaming.webp';
 import OldPortfolioImg from '@/assets/images/portfolio-web-viejo.webp';
 import YourEventsAppImg from '@/assets/images/your-events-app.webp';
@@ -162,7 +164,7 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
-      title: 'Landing de Venta Cruzada de Pepper',
+      title: 'Landing de Venta Cruzada (Pepper)',
       description:
         'Landing web de una única página para los clientes de Pepper. Permite acceder y contratar nuevos productos como préstamos personales o refinanciar otros préstamos existentes.',
       detailsTitle: 'Detalles',
@@ -173,6 +175,14 @@ export const ProjectsTexts: ProjectsText = {
         'Fue refactorizada y mejorada en 2026 para añadir opciones de refinanciación en el caso de que se rechace la contratación de un nuevo producto.',
         'Para acceder es necesario un link que se envía en un sms. Este contiene un token verificado y válido solo para el cliente preseleccionado.',
       ],
+      media: {
+        type: 'image',
+        src: PepperImg2,
+        width: 640,
+        height: 360,
+        alt: 'Pantalla de Pepper 2',
+        className: 'pepperComerciosImg',
+      },
     },
     {
       title: 'Pepper Comercios',
@@ -200,7 +210,7 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
-      title: 'Landing de pagos de Pepper',
+      title: 'Landing de pagos (Pepper)',
       description:
         'Landing web de una única página totalmente responsive para los clientes de Pepper. Permite acceder y abonar pagos de deuda pendiente, adelantar pagos o consultar sus pagos futuros.',
       detailsTitle: 'Detalles',
@@ -211,6 +221,14 @@ export const ProjectsTexts: ProjectsText = {
         'Realicé su refactorización en profundidad en 2025 además de incorporar nuevas funcionalidades y mejoras de rendimiento.',
         'Para acceder es necesario un link que se envía en un sms, o bien desde la app de Clientes. Este enlace contiene un token verificado y válido solo para un cliente concreto.',
       ],
+      media: {
+        type: 'image',
+        src: PepperImg1,
+        width: 640,
+        height: 360,
+        alt: 'Pantalla de Pepper',
+        className: 'pepperComerciosImg',
+      },
     },
     {
       title: 'Mi antiguo portfolio web',
@@ -302,6 +320,36 @@ export const ProjectsTexts: ProjectsText = {
       },
     },
     {
+      title: 'Mi propia calculadora',
+      description: {
+        before:
+          'Aplicación de calculadora básica creada con Python y su librería gráfica Tkinter. La he realizado gracias al siguiente curso de Udemy: ',
+        linkText: 'Universidad Python 2021 - POO, Tkinter, Django, Flask y más',
+        linkHref:
+          'https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/',
+        after: ' (47 h).',
+      },
+      detailsTitle: 'Detalles',
+      details: [
+        'Lenguaje/s: Python.',
+        'IDE: PyCharm.',
+        'Fecha de creación: 15 de enero de 2022.',
+        {
+          before: 'GitHub: ',
+          linkText: 'calculadora',
+          linkHref: 'https://github.com/Anrogo/Python-Curse/tree/master/Tkinter/Calculadora',
+          after: '.',
+        },
+      ],
+      media: {
+        type: 'image',
+        src: CalculatorImg,
+        width: 300,
+        height: 300,
+        alt: 'Calculadora con Python y Tkinter',
+      },
+    },
+    {
       title: 'HealthyCook App',
       description:
         'Diseño UI - UX para aplicación móvil de cocina saludable. Forma parte del ejercicio de la asignatura Desarrollo de Interfaces (UI) y Experiencia de Usuario (UX) de 2º DAM.',
@@ -344,36 +392,6 @@ export const ProjectsTexts: ProjectsText = {
         width: 240,
         height: 426,
         alt: 'App YourEvents',
-      },
-    },
-    {
-      title: 'Mi propia calculadora',
-      description: {
-        before:
-          'Aplicación de calculadora básica creada con Python y su librería gráfica Tkinter. La he realizado gracias al siguiente curso de Udemy: ',
-        linkText: 'Universidad Python 2021 - POO, Tkinter, Django, Flask y más',
-        linkHref:
-          'https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/',
-        after: ' (47 h).',
-      },
-      detailsTitle: 'Detalles',
-      details: [
-        'Lenguaje/s: Python.',
-        'IDE: PyCharm.',
-        'Fecha de creación: 15 de enero de 2022.',
-        {
-          before: 'GitHub: ',
-          linkText: 'calculadora',
-          linkHref: 'https://github.com/Anrogo/Python-Curse/tree/master/Tkinter/Calculadora',
-          after: '.',
-        },
-      ],
-      media: {
-        type: 'image',
-        src: CalculatorImg,
-        width: 300,
-        height: 300,
-        alt: 'Calculadora con Python y Tkinter',
       },
     },
   ],

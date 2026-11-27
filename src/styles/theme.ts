@@ -2,6 +2,12 @@ import { colors } from '@/constants/colors';
 
 export const defaultTheme = {
   colors,
+  project: {
+    cardBackground: colors.green0,
+    cardText: colors.blue4,
+    detailBorder: colors.green1,
+    detailBackground: colors.green0,
+  },
   hoverColor: colors.blue1,
   backgroundOverlay: 'rgba(0, 0, 0, 0)',
   shadows: {
@@ -52,6 +58,13 @@ export const theme = defaultTheme;
 
 export const darkTheme = {
   ...defaultTheme,
+  project: {
+    ...defaultTheme.project,
+    cardBackground: colors.darkGray,
+    cardText: colors.white,
+    detailBorder: colors.blue3,
+    detailBackground: '#1E293B',
+  },
   colors: {
     ...colors,
     blue0: '#1E293B', // panel

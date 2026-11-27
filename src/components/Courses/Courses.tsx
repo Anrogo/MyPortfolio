@@ -1,12 +1,12 @@
 import { CoursesList, CoursesListDetail, CoursesSection } from './Courses.styled';
 import type { CourseText } from '@/interfaces/Text';
-import { Description, Subtitle, Text } from '@/styles/GlobalStyle';
+import { Description, SectionSubtitle, Text } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 
 const Courses = ({ texts }: { texts: CourseText }) => {
   return (
     <CoursesSection id="Courses">
-      <Subtitle fontWeight={theme.fontWeight.light}>{texts.title}</Subtitle>
+      <SectionSubtitle fontWeight={theme.fontWeight.light}>{texts.title}</SectionSubtitle>
       <CoursesList>
         {texts.courses.map((Course) => (
           <CoursesListDetail key={Course.description}>

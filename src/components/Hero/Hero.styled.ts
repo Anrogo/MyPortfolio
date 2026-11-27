@@ -1,6 +1,6 @@
 import NextImage from 'next/image';
 import { styled } from 'styled-components';
-import { Subtitle } from '@/styles/GlobalStyle';
+import { SectionSubtitle } from '@/styles/GlobalStyle';
 import { theme } from '@/styles/theme';
 
 export const HeroContainer = styled.div`
@@ -64,7 +64,7 @@ export const ProfileImage = styled(NextImage)`
   object-position: center 30%;
 `;
 
-export const HeroSubtitle = styled(Subtitle)`
+export const HeroSubtitle = styled(SectionSubtitle)`
   font-style: italic;
   font-size: ${theme.fontSize.xl};
 
